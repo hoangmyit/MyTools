@@ -1,6 +1,9 @@
 /* ###### 4.6 Parsley ###### */
 
-input.parsley-error:focus, textarea.parsley-error:focus, input.parsley-success:focus, textarea.parsley-success:focus {
+input.parsley-error:focus,
+textarea.parsley-error:focus,
+input.parsley-success:focus,
+textarea.parsley-success:focus {
   box-shadow: none !important;
 }
 
@@ -9,7 +12,7 @@ input.parsley-error:focus, textarea.parsley-error:focus, input.parsley-success:f
     display: inline-block;
     padding: 10px;
     border: 1px solid $danger;
-    border-radius:0px;
+    border-radius: 0px;
   }
 
   &.parsley-success {

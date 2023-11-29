@@ -2,23 +2,25 @@
 
 .sp-container {
   background-color: $white;
-  border-color:$border;
+  border-color: $border;
   z-index: 200;
-  border-radius:5px;
-  box-shadow:0px 4px 7px rgba(154, 154, 204, .1);
+  border-radius: 5px;
+  box-shadow: 0px 4px 7px rgba(154, 154, 204, 0.1);
 
   button {
     border: 0;
     padding: 8px 15px;
     background-image: none;
     background-color: $gray-300;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-size: 12px;
     text-shadow: none;
     text-transform: capitalize;
     border-radius: 2px;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       border: 0;
       background-image: none;
       background-color: $gray-500;
@@ -28,12 +30,14 @@
 }
 
 .sp-button-container .sp-cancel {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 12px;
   text-transform: capitalize;
   color: $gray-600 !important;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $gray-800 !important;
     text-decoration: none;
   }
@@ -46,9 +50,10 @@
 .sp-replacer {
   border-color: $border;
   background-color: $white;
-   border-radius:5px;
-  &:hover, &:focus {
-    border-color:$border;
+  border-radius: 5px;
+  &:hover,
+  &:focus {
+    border-color: $border;
   }
 
   &.sp-active {
@@ -86,7 +91,8 @@
 }
 
 .sp-palette .sp-thumb-el {
-  &:hover, &.sp-thumb-active {
+  &:hover,
+  &.sp-thumb-active {
     border-color: $gray-800;
   }
 }

@@ -4,7 +4,8 @@
   display: block;
   padding: 0;
 
-  .main-content-breadcrumb, .main-content-title {
+  .main-content-breadcrumb,
+  .main-content-title {
     padding-inline-start: 20px;
   }
 }
@@ -23,7 +24,8 @@
 
 @media (min-width: 992px) {
   .main-content-left-invoice {
-    .main-content-breadcrumb, .main-content-title {
+    .main-content-breadcrumb,
+    .main-content-title {
       padding-inline-start: 0;
     }
   }
@@ -40,7 +42,8 @@
     padding: 10px 20px;
     position: relative;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       cursor: pointer;
       background-color: $gray-100;
     }
@@ -102,8 +105,8 @@
 
   .selected {
     background-color: $gray-100;
-    border-block-start-color:$border;
-    border-block-end-color:$border;
+    border-block-start-color: $border;
+    border-block-end-color: $border;
     border-inline-start-color: $primary;
 
     &:first-child {
@@ -111,8 +114,8 @@
     }
   }
 }
-.card-invoice hr{
-	border-block-start:0 !important;
+.card-invoice hr {
+  border-block-start: 0 !important;
 }
 @media (min-width: 992px) {
   .main-invoice-list {
@@ -213,28 +216,33 @@
 
 .table-invoice {
   thead > tr > {
-    th, td {
+    th,
+    td {
       font-size: 13px;
       font-weight: 700;
-      color:#37374e !important;
+      color: #37374e !important;
     }
   }
 
   tbody > tr > {
-    th:first-child, td:first-child {
+    th:first-child,
+    td:first-child {
       color: $gray-900;
       font-weight: 500;
     }
 
-    th:first-child .invoice-notes, td:first-child .invoice-notes {
+    th:first-child .invoice-notes,
+    td:first-child .invoice-notes {
       margin-inline-end: 20px;
     }
 
-    th:first-child .invoice-notes .section-label-sm, td:first-child .invoice-notes .section-label-sm {
+    th:first-child .invoice-notes .section-label-sm,
+    td:first-child .invoice-notes .section-label-sm {
       font-weight: 600;
     }
 
-    th:first-child .invoice-notes p, td:first-child .invoice-notes p {
+    th:first-child .invoice-notes p,
+    td:first-child .invoice-notes p {
       font-size: 13px;
       font-weight: 400;
       color: $default-color;
@@ -242,7 +250,8 @@
   }
 
   &.table thead {
-    th, td {
+    th,
+    td {
       padding: 9px 15px;
     }
   }

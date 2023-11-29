@@ -1,26 +1,28 @@
 /*---- Tags-----*/
 
 .tag {
-	font-size: 0.75rem;
-	color: #8189b6;
-	border: 1px solid $border;
-	border-radius: 3px;
-	padding: 2px 0.55rem;
-	line-height: 2em;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	cursor: default;
-	font-weight: 400;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  font-size: 0.75rem;
+  color: #8189b6;
+  border: 1px solid $border;
+  border-radius: 3px;
+  padding: 2px 0.55rem;
+  line-height: 2em;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: default;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 a.tag {
   text-decoration: none;
   cursor: pointer;
-  transition: .3s color, .3s background;
+  transition:
+    0.3s color,
+    0.3s background;
 
   &:hover {
     background-color: rgba(110, 118, 135, 0.2);
@@ -30,14 +32,14 @@ a.tag {
 
 .tag-addon {
   display: inline-block;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   color: inherit;
   text-decoration: none;
   background: #f9f9fb;
-    margin-block-start: 0px;
-    margin-inline-end: -0.4rem;
-    margin-block-end: 0px;
-    margin-inline-start: 0.5rem;
+  margin-block-start: 0px;
+  margin-inline-end: -0.4rem;
+  margin-block-end: 0px;
+  margin-inline-start: 0.5rem;
   text-align: center;
   min-width: 1.5rem;
 
@@ -47,7 +49,7 @@ a.tag {
 
   i {
     vertical-align: middle;
-    margin: 0 -.25rem;
+    margin: 0 -0.25rem;
     line-height: 1.5px;
     font-size: 13px;
   }
@@ -56,7 +58,9 @@ a.tag {
 a.tag-addon {
   text-decoration: none;
   cursor: pointer;
-  transition: .3s color, .3s background;
+  transition:
+    0.3s color,
+    0.3s background;
 
   &:hover {
     background: rgb(238, 238, 255);
@@ -68,10 +72,10 @@ a.tag-addon {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 3px 0 0 3px;
-    margin-block-start: 0px;
-    margin-inline-end: 0.5rem;
-    margin-block-end: 0px;
-    margin-inline-start: -0.5rem;
+  margin-block-start: 0px;
+  margin-inline-end: 0.5rem;
+  margin-block-end: 0px;
+  margin-inline-start: -0.5rem;
 }
 
 .tag-blue {
@@ -198,49 +202,49 @@ a.tag-addon {
 }
 
 .tags {
-  margin-block-end: -.5rem;
+  margin-block-end: -0.5rem;
   font-size: 0;
 
   > .tag {
-    margin-block-end: .5rem;
+    margin-block-end: 0.5rem;
 
     &:not(:last-child) {
-      margin-inline-end: .2rem;
+      margin-inline-end: 0.2rem;
     }
   }
 }
 
 @media (min-width: 459px) {
-  .text-wrap .example .form-group{
-    margin-block-end:0;
+  .text-wrap .example .form-group {
+    margin-block-end: 0;
   }
 }
-.tag-primary{
- background-color: $primary !important;
-    color: #fff;
+.tag-primary {
+  background-color: $primary !important;
+  color: #fff;
 }
-.tag-secondary{
- background-color: $secondary !important;
-    color: #fff;
+.tag-secondary {
+  background-color: $secondary !important;
+  color: #fff;
 }
 
-.tag-success{
- background-color: $success !important;
-    color: #fff;
+.tag-success {
+  background-color: $success !important;
+  color: #fff;
 }
-.tag-danger{
- background-color: $danger !important;
-    color: #fff;
+.tag-danger {
+  background-color: $danger !important;
+  color: #fff;
 }
-.tag-warning{
- background-color: $warning !important;
-    color: #fff;
+.tag-warning {
+  background-color: $warning !important;
+  color: #fff;
 }
-.tag-info{
- background-color: $info !important;
-    color: #fff;
+.tag-info {
+  background-color: $info !important;
+  color: #fff;
 }
-.tag-teal{
- background-color: $teal !important;
-    color: #fff;
+.tag-teal {
+  background-color: $teal !important;
+  color: #fff;
 }

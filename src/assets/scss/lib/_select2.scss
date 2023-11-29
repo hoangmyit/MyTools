@@ -53,10 +53,10 @@
       position: relative;
       margin-block-start: 5px;
       margin-inline-end: 4px;
-    padding-block-start: 3px;
-    padding-inline-end: 10px;
-    padding-block-end: 3px;
-    padding-inline-start: 20px;
+      padding-block-start: 3px;
+      padding-inline-end: 10px;
+      padding-block-end: 3px;
+      padding-inline-start: 20px;
       border-color: transparent;
       border-radius: 3px;
       background-color: $primary;
@@ -66,7 +66,7 @@
 
     .select2-selection__choice__remove {
       color: $white;
-      opacity: .5;
+      opacity: 0.5;
       font-size: 12px;
       display: inline-block;
       position: absolute;
@@ -82,10 +82,10 @@
   .select2-search--dropdown .select2-search__field {
     border-color: $gray-300;
     border-radius: 0;
-	  outline:none;
+    outline: none;
   }
 
-  .select2-results__option[aria-selected="true"] {
+  .select2-results__option[aria-selected='true'] {
     background-color: white;
   }
 
@@ -111,7 +111,8 @@
 }
 
 .select2-container--open {
-  .select2-selection--single, .select2-selection--multiple {
+  .select2-selection--single,
+  .select2-selection--multiple {
     background-color: $white;
     border-color: $gray-300;
   }
@@ -131,8 +132,8 @@
 .select2-dropdown {
   border-color: $border !important;
   z-index: 200;
-  border-radius:0 0 5px 5xp !important;
-  box-shadow:0px 4px 7px rgba(154, 154, 204, .1) !important;
+  border-radius: 0 0 5px 5xp !important;
+  box-shadow: 0px 4px 7px rgba(154, 154, 204, 0.1) !important;
 }
 
 .select2-search--dropdown {
@@ -143,7 +144,8 @@
   padding: 6px 10px !important;
 }
 
-.has-success .select2-container--default .select2-selection--single, .parsley-select.parsley-success .select2-container--default .select2-selection--single {
+.has-success .select2-container--default .select2-selection--single,
+.parsley-select.parsley-success .select2-container--default .select2-selection--single {
   border-color: $success;
 }
 
@@ -151,23 +153,26 @@
   border-color: $warning;
 }
 
-.has-danger .select2-container--default .select2-selection--single, .parsley-select.parsley-error .select2-container--default .select2-selection--single {
+.has-danger .select2-container--default .select2-selection--single,
+.parsley-select.parsley-error .select2-container--default .select2-selection--single {
   border-color: $danger;
 }
 
-.select2-xs + .select2-container, .select2-dropdown-xs .select2-results__option {
+.select2-xs + .select2-container,
+.select2-dropdown-xs .select2-results__option {
   font-size: 12px;
 }
 
-.select2-sm + .select2-container, .select2-dropdown-sm .select2-results__option {
+.select2-sm + .select2-container,
+.select2-dropdown-sm .select2-results__option {
   font-size: 14px;
 }
 
 .select2-bd-0 + .select2-container--default .select2-selection--single {
   border-width: 0;
 }
-.select2-dropdown{
-    z-index: 99999;
+.select2-dropdown {
+  z-index: 99999;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: $primary !important;
@@ -176,9 +181,9 @@
 
 .select2-search--dropdown {
   display: block;
-  }
+}
 
-.select2-sm  {
+.select2-sm {
   .select2-container--default .select2-selection--single {
     height: calc(1.5em + 0.5rem + 2px) !important;
   }
@@ -187,7 +192,7 @@
   }
 }
 
-.select2-lg  {
+.select2-lg {
   .select2-container .select2-selection--single .select2-selection__rendered {
     padding-inline-start: 4px !important;
   }
@@ -217,15 +222,14 @@
     height: 40px;
   }
   .select2-container {
-    width:100% !important;
-  } 
+    width: 100% !important;
+  }
   .select2-lg {
-      
     .select2-container--default .select2-selection--single .select2-selection__rendered {
       line-height: 1.5;
     }
     .select2-container .select2-selection--single {
-      height:44.25px;
+      height: 44.25px;
     }
     .select2-container--default .select2-selection--single .select2-selection__arrow {
       height: 44.25px;
@@ -239,7 +243,7 @@
       line-height: 1.1;
     }
     .select2-container .select2-selection--single {
-      height:31px;
+      height: 31px;
     }
     .select2-container--default .select2-selection--single .select2-selection__arrow {
       height: 31px;

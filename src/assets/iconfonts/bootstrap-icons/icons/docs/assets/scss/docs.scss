@@ -1,15 +1,15 @@
-@import "variables";
-@import "buttons";
-@import "clipboard-js";
-@import "navbar";
-@import "skippy";
-@import "footer";
-@import "syntax";
-@import "ads";
+@import 'variables';
+@import 'buttons';
+@import 'clipboard-js';
+@import 'navbar';
+@import 'skippy';
+@import 'footer';
+@import 'syntax';
+@import 'ads';
 
 .bi {
   display: inline-block;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
 }
 
 .hero-notice {
@@ -24,7 +24,7 @@
   padding: 1.25rem;
   margin-block-end: 1.5rem;
   background-color: $gray-100;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 
   pre {
     margin-block-end: 0;
@@ -42,9 +42,9 @@
 
 .bd-example {
   padding: 1.25rem;
-  border: 1px solid rgba(0, 0, 0, .1);
-  border-start-start-radius: .25rem;
-  border-start-end-radius: .25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-start-start-radius: 0.25rem;
+  border-start-end-radius: 0.25rem;
 
   + .bd-clipboard + .highlight pre {
     border-start-start-radius: 0;
@@ -71,15 +71,15 @@
 }
 
 .hero {
-  border-block-end: 1px solid rgba(0, 0, 0, .05);
+  border-block-end: 1px solid rgba(0, 0, 0, 0.05);
 
   .highlight pre {
     padding-inline-end: 4em;
     margin-block-end: 0;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
   .btn-clipboard {
-    inset-block-start: .625em;
+    inset-block-start: 0.625em;
   }
 
   hr {
@@ -114,9 +114,9 @@
     margin-inline-start: 15px;
     color: $gray-500;
     text-align: center;
-    content: "Nothing found, try searching again.";
+    content: 'Nothing found, try searching again.';
     background-color: $gray-100;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 }
 
@@ -125,7 +125,7 @@
 }
 
 .name {
-  font-size: .8125rem;
+  font-size: 0.8125rem;
 }
 
 @media (min-width: 1200px) {
@@ -161,12 +161,13 @@
 // stylelint-disable
 @font-face {
   font-family: bootstrap-icons;
-  src: url("../../font/fonts/bootstrap-icons.woff2?231ce25e89ab5804f9a6c427b8d325c9") format("woff2"),
-       url("../../font/fonts/bootstrap-icons.woff?231ce25e89ab5804f9a6c427b8d325c9") format("woff");
+  src:
+    url('../../font/fonts/bootstrap-icons.woff2?231ce25e89ab5804f9a6c427b8d325c9') format('woff2'),
+    url('../../font/fonts/bootstrap-icons.woff?231ce25e89ab5804f9a6c427b8d325c9') format('woff');
 }
 
-[class^="bi-"]::before,
-[class*=" bi-"]::before {
+[class^='bi-']::before,
+[class*=' bi-']::before {
   display: inline-block;
   font-family: bootstrap-icons !important;
   font-style: normal;
@@ -174,11 +175,15 @@
   font-variant: normal;
   line-height: 1;
   text-transform: none;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.bi-alarm::before { content: "\f102"; }
-.bi-github::before { content: "\f3ed"; }
+.bi-alarm::before {
+  content: '\f102';
+}
+.bi-github::before {
+  content: '\f3ed';
+}
 // stylelint-enable

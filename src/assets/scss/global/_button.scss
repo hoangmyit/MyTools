@@ -1,4 +1,3 @@
-
 /* ###### globalButton  ###### */
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus {
@@ -6,8 +5,7 @@
 }
 
 //
-.btn-group> {
-
+.btn-group > {
   .btn {
     &:not(:first-child) {
       border-start-start-radius: 0 !important;
@@ -18,7 +16,6 @@
       border-end-end-radius: 0 !important;
     }
   }
-  
 }
 
 //
@@ -33,7 +30,7 @@
   border: 1px solid $border !important;
   margin-inline-end: 5px !important;
   padding: 0;
-  color:#000
+  color: #000;
 }
 
 //
@@ -55,16 +52,15 @@
 //
 .btn-group.file-attach .btn-text.rounded-pill {
   border-start-start-radius: 50px !important;
-    border-start-end-radius: 0px !important;
-    border-end-end-radius: 0px !important;
-    border-end-start-radius: 50px !important;
-  
+  border-start-end-radius: 0px !important;
+  border-end-end-radius: 0px !important;
+  border-end-start-radius: 50px !important;
 }
 .btn-group.file-attach .btn-text1 {
   border-start-start-radius: 4px !important;
-    border-start-end-radius: 0px !important;
-    border-end-end-radius: 0px !important;
-    border-end-start-radius: 4px !important;
+  border-start-end-radius: 0px !important;
+  border-end-end-radius: 0px !important;
+  border-end-start-radius: 4px !important;
 }
 
 //

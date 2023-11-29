@@ -1,16 +1,19 @@
 /* ###### 3.10 Nav ###### */
 
 .nav-link {
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     outline: none;
   }
-  transition: .3s color;
+  transition: 0.3s color;
 }
 
 .nav-pills .nav-link {
   color: $gray-700;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $gray-900;
   }
 
@@ -18,7 +21,8 @@
     border-radius: 5px;
     background-color: $primary;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $white;
     }
   }
@@ -27,7 +31,8 @@
 .nav-dark .nav-link {
   color: $gray-500;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $white;
   }
 }
@@ -43,7 +48,8 @@
     line-height: 1.428;
     color: $gray-700;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $white-5;
       color: $gray-900;
     }
@@ -56,7 +62,7 @@
       background-color: $white;
       color: $gray-900;
       font-weight: 500;
-      letter-spacing: -.1px;
+      letter-spacing: -0.1px;
     }
   }
 }
@@ -77,12 +83,13 @@
 
 .nav-link {
   display: block;
-    padding-block-start: 0.2rem;
-    padding-inline-end: 0rem;
-    padding-block-end: 0rem;
-    padding-inline-start: 0.2rem;
+  padding-block-start: 0.2rem;
+  padding-inline-end: 0rem;
+  padding-block-end: 0rem;
+  padding-inline-start: 0.2rem;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 
@@ -94,7 +101,7 @@
 }
 
 .latest-tasks .nav-tabs {
-   border-block-end:0 !important;
+  border-block-end: 0 !important;
 }
 .nav-tabs {
   border-block-end: 1px solid $border;
@@ -108,7 +115,8 @@
     border-start-start-radius: 3px;
     border-start-end-radius: 3px;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       border-color: $gray-200 $gray-200 $gray-200;
     }
 
@@ -121,14 +129,14 @@
     &.active {
       color: $gray-700;
       background-color: $white;
-      border-color:$white;
+      border-color: $white;
     }
   }
 
   .nav-item.show .nav-link {
     color: $gray-700;
     background-color: $white;
-    border-color: $gray-300  $gray-300  $white;
+    border-color: $gray-300 $gray-300 $white;
   }
 
   .dropdown-menu {
@@ -190,14 +198,15 @@
   position: relative;
   line-height: normal;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $gray-900;
   }
 
   + .nav-link {
     padding-block-start: 12px;
     margin-block-start: 12px;
-    border-block-start:1px solid $border;
+    border-block-start: 1px solid $border;
   }
 
   &.active {
@@ -226,7 +235,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-	padding: 7px 14px;
+    padding: 7px 14px;
 
     i {
       font-size: 24px;
@@ -241,7 +250,7 @@
       }
 
       &.typcn {
-        line-height: .9;
+        line-height: 0.9;
       }
     }
 
@@ -252,13 +261,16 @@
       margin-inline-start: auto;
     }
 
-    &:hover, &:focus, &:hover i:not([class*=' tx-']), &:focus i:not([class*=' tx-']) {
+    &:hover,
+    &:focus,
+    &:hover i:not([class*=' tx-']),
+    &:focus i:not([class*=' tx-']) {
       color: $gray-900;
     }
 
     &.active {
       position: relative;
-	  background:$bg-active;
+      background: $bg-active;
       border-radius: 5px;
 
       &::before {
@@ -275,11 +287,14 @@
 
       color: $primary;
 
-      &:hover, &:focus, i, &:hover i, &:focus i {
+      &:hover,
+      &:focus,
+      i,
+      &:hover i,
+      &:focus i {
         color: $primary;
       }
     }
-
   }
 
   &.sm .nav-link {
@@ -302,7 +317,8 @@
 .main-nav-dark .nav-link {
   color: $white-7;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $white;
   }
 
@@ -317,7 +333,7 @@
 
 .main-nav-colored-bg .nav-link {
   + .nav-link {
-    border-color: rgba(180, 166, 166, .4);
+    border-color: rgba(180, 166, 166, 0.4);
   }
 
   &.active {
@@ -333,7 +349,8 @@
     color: $gray-700;
     position: relative;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $gray-900;
     }
 
@@ -341,7 +358,7 @@
     padding-inline-end: 10px;
     padding-block-end: 0px;
     padding-inline-start: 10px;
-    
+
     color: #37326d;
     position: relative;
 
@@ -353,7 +370,8 @@
   &.main-nav-dark .nav-link {
     color: $white-7;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $white;
     }
 
@@ -367,12 +385,11 @@
   }
 }
 
-
 .main-nav-tabs {
-    padding-block-start: 15px;
-    padding-inline-end: 15px;
-    padding-block-end: 0px;
-    padding-inline-start: 15px;
+  padding-block-start: 15px;
+  padding-inline-end: 15px;
+  padding-block-end: 0px;
+  padding-inline-start: 15px;
   background-color: $gray-300;
 
   .lSSlideOuter {
@@ -390,10 +407,11 @@
     height: 40px;
     inset-block-start: 16px;
     opacity: 1;
-    background-color:$gray-400;
+    background-color: $gray-400;
     background-image: none;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: #a5afc4;
     }
 
@@ -453,7 +471,8 @@
     white-space: nowrap;
     background-color: $gray-200;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $gray-100;
     }
 
@@ -481,7 +500,7 @@
   }
 
   inset-block-start: 48px;
-  border-radius:0px 0px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
   min-width: 245px;
   -webkit-box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2);
   box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2);
@@ -517,34 +536,33 @@
   font-weight: 500;
 }
 
-.main-nav-column .nav-link.active span{
-    color: $primary;
-	font-size: 14px;
-}
-	
-.navbar-toggler:focus {
-	text-decoration: none;
-	outline: 0;
-   box-shadow:none;
+.main-nav-column .nav-link.active span {
+  color: $primary;
+  font-size: 14px;
 }
 
-@media (max-width: 320px){
-	.main-toggle.on span {
-		inset-inline-start: 29px !important;
-	}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
 }
-.icon-navbar .nav-pills-circle .nav-link{
-  padding:.75rem 1rem;
+
+@media (max-width: 320px) {
+  .main-toggle.on span {
+    inset-inline-start: 29px !important;
+  }
+}
+.icon-navbar .nav-pills-circle .nav-link {
+  padding: 0.75rem 1rem;
 }
 @media (min-width: 768px) {
   .bg-primary .main-nav .nav-link + .nav-link {
-      border-inline-start: 1px solid $nav-primary-border !important;
+    border-inline-start: 1px solid $nav-primary-border !important;
   }
   .bg-secondary .main-nav .nav-link + .nav-link {
     border-inline-start: 1px solid $nav-secondary-border !important;
+  }
+  .bg-info .main-nav .nav-link + .nav-link {
+    border-inline-start: 1px solid $nav-info-border !important;
+  }
 }
-.bg-info .main-nav .nav-link + .nav-link {
-  border-inline-start: 1px solid $nav-info-border !important;
-}
-}
-

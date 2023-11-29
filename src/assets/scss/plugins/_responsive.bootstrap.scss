@@ -55,9 +55,9 @@ table.dataTable {
           box-sizing: content-box;
           text-align: center;
           text-indent: 0 !important;
-          font-family: "Courier New", Courier, monospace;
+          font-family: 'Courier New', Courier, monospace;
           line-height: 1em;
-          content: "+";
+          content: '+';
           background-color: #6c5ffc;
         }
       }
@@ -65,7 +65,7 @@ table.dataTable {
       &.parent > {
         td.dtr-control:before,
         th.dtr-control:before {
-          content: "-";
+          content: '-';
           background-color: #f82649;
         }
       }
@@ -118,9 +118,9 @@ table.dataTable {
         box-sizing: content-box;
         text-align: center;
         text-indent: 0 !important;
-        font-family: "Courier New", Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         line-height: 1em;
-        content: "+";
+        content: '+';
         background-color: #0d6efd;
       }
     }
@@ -130,7 +130,7 @@ table.dataTable {
       th.dtr-control:before,
       td.control:before,
       th.control:before {
-        content: "-";
+        content: '-';
         background-color: #d33333;
       }
     }

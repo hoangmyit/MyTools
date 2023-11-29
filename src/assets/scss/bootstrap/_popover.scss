@@ -38,23 +38,23 @@
   }
 
   &.bs-popover-top .popover-arrow,
-  &.bs-popover-auto[data-popper-placement^="top"] .popover-arrow {
+  &.bs-popover-auto[data-popper-placement^='top'] .popover-arrow {
     inset-block-end: -7px;
   }
 
   &.bs-popover-start .popover-arrow,
-  &.bs-popover-auto[data-popper-placement^="left"] .popover-arrow {
+  &.bs-popover-auto[data-popper-placement^='left'] .popover-arrow {
     inset-inline-end: -7px;
   }
 
   &.bs-popover-end .popover-arrow,
-  &.bs-popover-auto[data-popper-placement^="right"] .popover-arrow {
+  &.bs-popover-auto[data-popper-placement^='right'] .popover-arrow {
     inset-inline-start: -7px;
   }
 
   &.bs-popover-bottom .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="bottom"] .popover-arrow::after {
-    border-block-end-color: $primary  !important;
+  &.bs-popover-auto[data-popper-placement^='bottom'] .popover-arrow::after {
+    border-block-end-color: $primary !important;
   }
 }
 
@@ -65,22 +65,22 @@
   }
 
   &.bs-popover-top .popover-arrow,
-  &.bs-popover-auto[data-popper-placement^="top"] .popover-arrow {
+  &.bs-popover-auto[data-popper-placement^='top'] .popover-arrow {
     inset-block-end: -7px;
   }
 
   &.bs-popover-start .popover-arrow,
-  &.bs-popover-auto[data-popper-placement^="left"] .popover-arrow {
+  &.bs-popover-auto[data-popper-placement^='left'] .popover-arrow {
     inset-inline-end: -7px;
   }
 
   &.bs-popover-end .popover-arrow,
-  &.bs-popover-auto[data-popper-placement^="right"] .popover-arrow {
+  &.bs-popover-auto[data-popper-placement^='right'] .popover-arrow {
     inset-inline-start: -7px;
   }
 
   &.bs-popover-bottom .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="bottom"] .popover-arrow::after {
+  &.bs-popover-auto[data-popper-placement^='bottom'] .popover-arrow::after {
     border-block-end-color: $primary !important;
   }
 }
@@ -102,26 +102,24 @@
 }
 
 .popover-head-primary {
-
   &.bs-popover-bottom .popover-arrow::before,
-  &.bs-popover-auto[data-popper-placement^="bottom"] .popover-arrow::before {
+  &.bs-popover-auto[data-popper-placement^='bottom'] .popover-arrow::before {
     display: none;
   }
 }
 
 .popover-head-secondary {
-
   &.bs-popover-bottom .popover-arrow::before,
-  &.bs-popover-auto[data-popper-placement^="bottom"] .popover-arrow::before {
+  &.bs-popover-auto[data-popper-placement^='bottom'] .popover-arrow::before {
     display: none;
   }
 }
 
 .popover-primary {
-  background-color: $primary  !important;
+  background-color: $primary !important;
   border-width: 0;
   padding: 15px;
-  border: 1px solid $primary  !important;
+  border: 1px solid $primary !important;
 
   .popover-header {
     background-color: transparent;
@@ -140,31 +138,31 @@
   }
 
   &.bs-popover-top .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="top"] .popover-arrow::after {
-    border-block-start-color: $primary  !important;
+  &.bs-popover-auto[data-popper-placement^='top'] .popover-arrow::after {
+    border-block-start-color: $primary !important;
   }
 
   &.bs-popover-bottom .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="bottom"] .popover-arrow::after {
+  &.bs-popover-auto[data-popper-placement^='bottom'] .popover-arrow::after {
     border-block-end-color: $primary;
   }
 
   &.bs-popover-start .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="left"] .popover-arrow::after {
+  &.bs-popover-auto[data-popper-placement^='left'] .popover-arrow::after {
     border-inline-start-color: $primary;
   }
 
   &.bs-popover-end .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="right"] .popover-arrow::after {
+  &.bs-popover-auto[data-popper-placement^='right'] .popover-arrow::after {
     border-inline-end-color: $primary;
   }
 }
 
 .popover-secondary {
-  background-color: $secondary  !important;
+  background-color: $secondary !important;
   border-width: 0;
   padding: 15px;
-  border: 1px solid $secondary  !important;
+  border: 1px solid $secondary !important;
 
   .popover-header {
     background-color: transparent;
@@ -183,22 +181,22 @@
   }
 
   &.bs-popover-top .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="top"] .popover-arrow::after {
+  &.bs-popover-auto[data-popper-placement^='top'] .popover-arrow::after {
     border-block-start-color: $secondary;
   }
 
   &.bs-popover-bottom .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="bottom"] .popover-arrow::after {
-    border-block-end-color: $secondary  !important;
+  &.bs-popover-auto[data-popper-placement^='bottom'] .popover-arrow::after {
+    border-block-end-color: $secondary !important;
   }
 
   &.bs-popover-start .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="left"] .popover-arrow::after {
+  &.bs-popover-auto[data-popper-placement^='left'] .popover-arrow::after {
     border-inline-start-color: $primary;
   }
 
   &.bs-popover-end .popover-arrow::after,
-  &.bs-popover-auto[data-popper-placement^="right"] .popover-arrow::after {
+  &.bs-popover-auto[data-popper-placement^='right'] .popover-arrow::after {
     border-inline-end-color: $primary;
   }
 }
@@ -210,7 +208,8 @@
   z-index: 99;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -230,7 +229,7 @@
   background-clip: padding-box;
   border-radius: 5px;
   border: 1px solid $border;
-  box-shadow: -8px 12px 18px 0 rgba(154, 154, 204, .1);
+  box-shadow: -8px 12px 18px 0 rgba(154, 154, 204, 0.1);
 
   .popover-arrow {
     position: absolute;
@@ -243,7 +242,7 @@
     &::after {
       position: absolute;
       display: block;
-      content: "";
+      content: '';
       border-color: transparent;
       border-style: solid;
     }
@@ -251,87 +250,87 @@
 }
 
 .bs-popover-top,
-.bs-popover-auto[data-popper-placement^="top"] {
+.bs-popover-auto[data-popper-placement^='top'] {
   margin-block-end: 0.5rem;
 }
 
-.bs-popover-top>.popover-arrow,
-.bs-popover-auto[data-popper-placement^="top"]>.popover-arrow {
+.bs-popover-top > .popover-arrow,
+.bs-popover-auto[data-popper-placement^='top'] > .popover-arrow {
   inset-block-end: calc((0.5rem + 1px) * -1);
 }
 
-.bs-popover-top>.popover-arrow::before,
-.bs-popover-auto[data-popper-placement^="top"]>.popover-arrow::before {
+.bs-popover-top > .popover-arrow::before,
+.bs-popover-auto[data-popper-placement^='top'] > .popover-arrow::before {
   inset-block-end: 0;
   border-width: 0.5rem 0.5rem 0;
   border-block-start-color: $border;
 }
 
-.bs-popover-top>.popover-arrow::after,
-.bs-popover-auto[data-popper-placement^="top"]>.popover-arrow::after {
+.bs-popover-top > .popover-arrow::after,
+.bs-popover-auto[data-popper-placement^='top'] > .popover-arrow::after {
   border-width: 0.5rem 0.5rem 0;
   border-block-start-color: $white;
 }
 
-.bs-popover-auto[data-popper-placement^="right"] {
+.bs-popover-auto[data-popper-placement^='right'] {
   margin-inline-start: 0.8rem !important;
 }
 
-.bs-popover-end>.popover-arrow,
-.bs-popover-auto[data-popper-placement^="right"]>.popover-arrow {
+.bs-popover-end > .popover-arrow,
+.bs-popover-auto[data-popper-placement^='right'] > .popover-arrow {
   inset-inline-start: calc((0.5rem + 1px) * -1);
   width: 0.5rem;
   height: 1rem;
   margin: 0 0;
 }
 
-.bs-popover-end>.popover-arrow::before,
-.bs-popover-auto[data-popper-placement^="right"]>.popover-arrow::before {
+.bs-popover-end > .popover-arrow::before,
+.bs-popover-auto[data-popper-placement^='right'] > .popover-arrow::before {
   inset-inline-start: 0;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-inline-end-color: $border;
 }
 
-.bs-popover-end>.popover-arrow::after,
-.bs-popover-auto[data-popper-placement^="right"]>.popover-arrow::after {
+.bs-popover-end > .popover-arrow::after,
+.bs-popover-auto[data-popper-placement^='right'] > .popover-arrow::after {
   inset-inline-start: 1px;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-inline-end-color: $white;
 }
 
 .bs-popover-bottom,
-.bs-popover-auto[data-popper-placement^="bottom"] {
+.bs-popover-auto[data-popper-placement^='bottom'] {
   margin-block-start: 0.5rem;
 }
 
-.bs-popover-bottom>.popover-arrow,
-.bs-popover-auto[data-popper-placement^="bottom"]>.popover-arrow {
+.bs-popover-bottom > .popover-arrow,
+.bs-popover-auto[data-popper-placement^='bottom'] > .popover-arrow {
   inset-block-start: calc((0.5rem + 1px) * -1);
 }
 
-.bs-popover-bottom>.popover-arrow::before,
-.bs-popover-auto[data-popper-placement^="bottom"]>.popover-arrow::before {
+.bs-popover-bottom > .popover-arrow::before,
+.bs-popover-auto[data-popper-placement^='bottom'] > .popover-arrow::before {
   inset-block-start: 0;
   border-width: 0 0.5rem 0.5rem 0.5rem;
   border-block-end-color: $border;
 }
 
-.bs-popover-bottom>.popover-arrow::after,
-.bs-popover-auto[data-popper-placement^="bottom"]>.popover-arrow::after {
+.bs-popover-bottom > .popover-arrow::after,
+.bs-popover-auto[data-popper-placement^='bottom'] > .popover-arrow::after {
   inset-block-start: 1px;
   border-width: 0 0.5rem 0.5rem 0.5rem;
   border-block-end-color: $white;
 }
 
 .bs-popover-bottom .popover-header::before,
-.bs-popover-auto[data-popper-placement^="bottom"] .popover-header::before {
+.bs-popover-auto[data-popper-placement^='bottom'] .popover-header::before {
   position: absolute;
   inset-block-start: 0;
   inset-inline-start: 50%;
   display: block;
   width: 1rem;
   margin-inline-start: -0.5rem;
-  content: "";
+  content: '';
   border-block-end: 1px solid #f7f7f7;
 }
 
@@ -339,23 +338,23 @@
 //   margin-inline-end: -1rem !important;
 // }
 
-.bs-popover-start>.popover-arrow,
-.bs-popover-auto[data-popper-placement^="left"]>.popover-arrow {
+.bs-popover-start > .popover-arrow,
+.bs-popover-auto[data-popper-placement^='left'] > .popover-arrow {
   inset-inline-end: calc((0.5rem + 1px) * -1);
   width: 0.5rem;
   height: 1rem;
   margin: 0rem 0;
 }
 
-.bs-popover-start>.popover-arrow::before,
-.bs-popover-auto[data-popper-placement^="left"]>.popover-arrow::before {
+.bs-popover-start > .popover-arrow::before,
+.bs-popover-auto[data-popper-placement^='left'] > .popover-arrow::before {
   inset-inline-end: 0;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-inline-start-color: $border;
 }
 
-.bs-popover-start>.popover-arrow::after,
-.bs-popover-auto[data-popper-placement^="left"]>.popover-arrow::after {
+.bs-popover-start > .popover-arrow::after,
+.bs-popover-auto[data-popper-placement^='left'] > .popover-arrow::after {
   inset-inline-end: 1px;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-inline-start-color: $white;
@@ -392,29 +391,29 @@
     position: relative;
     display: inline-block;
     margin: 0 10px;
-    box-shadow: -8px 12px 18px 0 rgba(154, 154, 204, .1);
+    box-shadow: -8px 12px 18px 0 rgba(154, 154, 204, 0.1);
     border: 1px solid $border;
   }
 
   .bs-popover-top .popover-arrow,
-  .bs-popover-auto[data-popper-placement^="top"] .popover-arrow,
+  .bs-popover-auto[data-popper-placement^='top'] .popover-arrow,
   .bs-popover-bottom .popover-arrow,
-  .bs-popover-auto[data-popper-placement^="bottom"] .popover-arrow {
+  .bs-popover-auto[data-popper-placement^='bottom'] .popover-arrow {
     inset-inline-start: 50%;
     margin-inline-start: -5px;
   }
 
   .bs-popover-start,
-  .bs-popover-auto[data-popper-placement^="left"],
+  .bs-popover-auto[data-popper-placement^='left'],
   .bs-popover-end,
-  .bs-popover-auto[data-popper-placement^="right"] {
+  .bs-popover-auto[data-popper-placement^='right'] {
     margin-block-start: 5px;
   }
 
   .bs-popover-start .popover-arrow,
-  .bs-popover-auto[data-popper-placement^="left"] .popover-arrow,
+  .bs-popover-auto[data-popper-placement^='left'] .popover-arrow,
   .bs-popover-end .popover-arrow,
-  .bs-popover-auto[data-popper-placement^="right"] .popover-arrow {
+  .bs-popover-auto[data-popper-placement^='right'] .popover-arrow {
     inset-block-start: 50%;
     margin-block-start: -5px;
   }

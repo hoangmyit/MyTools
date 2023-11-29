@@ -1,14 +1,16 @@
 /* ###### 7.6 Mail  ###### */
 
 .main-content-mail {
-  .container, .container-fluid {
+  .container,
+  .container-fluid {
     padding: 20px 0 0;
   }
 }
 
 @media (min-width: 992px) {
   .main-content-mail {
-    .container, .container-fluid {
+    .container,
+    .container-fluid {
       padding: 0;
     }
   }
@@ -88,7 +90,8 @@
   }
 
   .btn-group {
-    .btn, .sp-container button {
+    .btn,
+    .sp-container button {
       font-size: 21px;
       display: flex;
       align-items: center;
@@ -138,7 +141,8 @@
 }
 
 .main-mail-header .btn-group {
-  .btn:hover, .sp-container button:hover {
+  .btn:hover,
+  .sp-container button:hover {
     color: $gray-900;
     background-color: $gray-100;
   }
@@ -150,7 +154,8 @@
 }
 
 .main-mail-header .btn-group {
-  .btn:focus, .sp-container button:focus {
+  .btn:focus,
+  .sp-container button:focus {
     color: $gray-900;
     background-color: $gray-100;
   }
@@ -162,7 +167,8 @@
 }
 
 .main-mail-header .btn-group {
-  .btn.disabled, .sp-container button.disabled {
+  .btn.disabled,
+  .sp-container button.disabled {
     background-color: $white;
     color: $gray-300;
     border-color: $gray-300;
@@ -178,7 +184,8 @@
 }
 
 .main-mail-header .btn-group {
-  .btn.disabled:focus, .sp-container button.disabled:focus {
+  .btn.disabled:focus,
+  .sp-container button.disabled:focus {
     box-shadow: none;
   }
 }
@@ -188,7 +195,8 @@
 }
 
 .main-mail-header .btn-group {
-  .btn.disabled:active, .sp-container button.disabled:active {
+  .btn.disabled:active,
+  .sp-container button.disabled:active {
     box-shadow: none;
   }
 }
@@ -198,26 +206,32 @@
 }
 
 .main-mail-header .btn-group {
-  .btn + .btn, .sp-container button + .btn {
+  .btn + .btn,
+  .sp-container button + .btn {
     margin-inline-start: -2px;
   }
 }
 
-.sp-container .main-mail-header .btn-group button + .btn, .main-mail-header .btn-group .sp-container .btn + button, .sp-container .main-mail-header .btn-group .btn + button, .main-mail-header .btn-group .sp-container button + button, .sp-container .main-mail-header .btn-group button + button {
+.sp-container .main-mail-header .btn-group button + .btn,
+.main-mail-header .btn-group .sp-container .btn + button,
+.sp-container .main-mail-header .btn-group .btn + button,
+.main-mail-header .btn-group .sp-container button + button,
+.sp-container .main-mail-header .btn-group button + button {
   margin-inline-start: -2px;
 }
 
 .main-mail-options {
-    padding-block-start: 5px;
-    padding-inline-end: 10px;
-    padding-block-end: 5px;
-    padding-inline-start: 20px;
+  padding-block-start: 5px;
+  padding-inline-end: 10px;
+  padding-block-end: 5px;
+  padding-inline-start: 20px;
   border: 1px solid $border;
   display: none;
   align-items: center;
   justify-content: flex-end;
 
-  .btn, .sp-container button {
+  .btn,
+  .sp-container button {
     font-size: 19px;
     display: flex;
     align-items: center;
@@ -247,7 +261,8 @@
 }
 
 .main-mail-options {
-  .btn:hover, .sp-container button:hover {
+  .btn:hover,
+  .sp-container button:hover {
     background-color: $gray-200;
   }
 }
@@ -257,7 +272,8 @@
 }
 
 .main-mail-options {
-  .btn:focus, .sp-container button:focus {
+  .btn:focus,
+  .sp-container button:focus {
     background-color: $gray-200;
   }
 }
@@ -267,7 +283,8 @@
 }
 
 .main-mail-options {
-  .btn i, .sp-container button i {
+  .btn i,
+  .sp-container button i {
     line-height: 0;
   }
 }
@@ -277,17 +294,19 @@
 }
 
 .main-mail-options {
-  .btn i.typcn, .sp-container button i.typcn {
-    line-height: .75;
+  .btn i.typcn,
+  .sp-container button i.typcn {
+    line-height: 0.75;
   }
 }
 
 .sp-container .main-mail-options button i.typcn {
-  line-height: .75;
+  line-height: 0.75;
 }
 
 .main-mail-options {
-  .btn.disabled, .sp-container button.disabled {
+  .btn.disabled,
+  .sp-container button.disabled {
     background-color: transparent;
     color: $gray-600;
   }
@@ -297,7 +316,6 @@
   background-color: transparent;
   color: $gray-600;
 }
-
 
 @media (min-width: 992px) {
   .main-mail-list {
@@ -309,7 +327,7 @@
   padding: 10px 15px;
   border-block-start: 1px solid $border;
   border-block-end: 1px solid $border;
-  background-color:transparent;
+  background-color: transparent;
   position: relative;
   display: flex;
   align-items: center;
@@ -319,17 +337,19 @@
     margin-block-start: -1px;
   }
 
-  .main-img-user, .main-avatar {
+  .main-img-user,
+  .main-avatar {
     flex-shrink: 0;
     margin-inline-end: 15px;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $bg-hover !important;
   }
 
   &.unread {
-    background-color: rgba($primary,0.04);
+    background-color: rgba($primary, 0.04);
   }
 
   &.selected {
@@ -364,7 +384,7 @@
 .main-mail-star {
   margin-inline-end: 15px;
   font-size: 18px;
-  line-height: .9;
+  line-height: 0.9;
   color: $gray-300;
   position: absolute;
   inset-block-end: 10px;
@@ -453,7 +473,7 @@
 .main-mail-attachment {
   margin-inline-end: 15px;
   font-size: 21px;
-  line-height: .9;
+  line-height: 0.9;
   display: none;
 }
 
@@ -532,7 +552,8 @@
     padding: 0;
     transition: all 0.2s ease-in-out;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $white;
     }
 
@@ -602,7 +623,8 @@
     &:last-child {
       display: block;
 
-      .btn, .sp-container button {
+      .btn,
+      .sp-container button {
         width: 100%;
         margin-block-start: 15px;
         padding-inline-start: 20px;
@@ -634,7 +656,8 @@
 
 @media (min-width: 576px) {
   .main-mail-compose-body .form-group:last-child {
-    .btn, .sp-container button {
+    .btn,
+    .sp-container button {
       width: auto;
       margin-block-start: 0;
     }
@@ -654,7 +677,8 @@
   position: relative;
   transition: all 0.2s ease-in-out;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $gray-900;
   }
 
@@ -669,7 +693,8 @@
   }
 }
 
-.main-mail-compose-compress, .main-mail-compose-minimize {
+.main-mail-compose-compress,
+.main-mail-compose-minimize {
   inset-block-start: auto;
   inset-inline-start: auto;
   inset-block-end: 0;

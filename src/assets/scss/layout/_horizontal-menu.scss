@@ -19,19 +19,17 @@
     }
 
     .main-footer {
-  
-    padding-block-start: 0.9rem !important;
-    padding-inline-end: 1rem !important;
-    padding-block-end: 0.9rem !important;
-    padding-inline-start: 1rem !important;
+      padding-block-start: 0.9rem !important;
+      padding-inline-end: 1rem !important;
+      padding-block-end: 0.9rem !important;
+      padding-inline-start: 1rem !important;
     }
 
     &.dark-theme {
-
       .horizontal-main .slide .slide-menu,
       .horizontal-main .slide .sub-slide-menu,
       .horizontal-main .sub-slide2 .sub-slide-menu1 {
-        background-color: $dark-theme  !important;
+        background-color: $dark-theme !important;
         border: 1px solid #404353;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
       }
@@ -85,7 +83,6 @@
       }
 
       .slide {
-
         .slide-menu,
         .sub-slide-menu {
           width: 190px;
@@ -116,7 +113,6 @@
     }
 
     .sub-slide-menu .sub-slide-item2 {
-
       padding-block-start: 8px !important;
       padding-inline-end: 20px !important;
       padding-block-end: 8px !important;
@@ -143,17 +139,17 @@
       inset-block-start: 13px;
     }
 
-    .side-menu>li>a {
+    .side-menu > li > a {
       display: flex;
       margin: 0px -4px !important;
       text-decoration: none;
       position: relative;
       color: #7b8191;
 
-    padding-block-start: 17px !important;
-    padding-inline-end: 13px !important;
-    padding-block-end: 17px !important;
-    padding-inline-start: 13px !important;
+      padding-block-start: 17px !important;
+      padding-inline-end: 13px !important;
+      padding-block-end: 17px !important;
+      padding-inline-start: 13px !important;
 
       font-weight: 400;
     }
@@ -258,9 +254,7 @@
       }
     }
   }
-
 }
-
 
 .logo-horizontal {
   display: none;
@@ -307,8 +301,8 @@
   }
 
   .horizontal-hover.horizontal .sub-slide-menu .sub-side-menu__item:before {
-    content: "\f22d";
-    font-family: "Font Awesome 5 Free";
+    content: '\f22d';
+    font-family: 'Font Awesome 5 Free';
     position: absolute;
     inset-inline-start: 20px !important;
     inset-block-start: 10px !important;
@@ -323,7 +317,6 @@
 }
 
 .horizontal {
-
   .main-contact-item.selected,
   .list-group-item.active,
   .select2-dropdown,
@@ -334,8 +327,8 @@
 
 @media (min-width: 992px) {
   .horizontal {
-    .horizontal-main{
-      &.ps .ps__rail-y .ps__thumb-y{
+    .horizontal-main {
+      &.ps .ps__rail-y .ps__thumb-y {
         display: none;
       }
     }

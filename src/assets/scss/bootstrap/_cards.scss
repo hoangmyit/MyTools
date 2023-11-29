@@ -306,10 +306,10 @@ dd {
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.05em;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-block-end: 0.5rem;
-    margin-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-block-end: 0.5rem;
+  margin-inline-start: 0px;
   background: $gray-100;
   padding: 7px 0;
   border-radius: 4px;
@@ -387,10 +387,10 @@ dd {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.05em;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-block-end: 0.5rem;
-    margin-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-block-end: 0.5rem;
+  margin-inline-start: 0px;
   background: transparent;
   padding: 0;
   border-radius: 4px;
@@ -420,7 +420,7 @@ dd {
   background-repeat: no-repeat;
 }
 .error-bg1::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -554,7 +554,7 @@ dd {
 }
 
 .card-title:before {
-  content: "";
+  content: '';
   width: 3px;
   height: 16px;
   background: $primary;
@@ -565,12 +565,12 @@ dd {
 }
 
 .card-title2:before {
-  content: "";
+  content: '';
   background: #f32b71;
 }
 
 .card-title3:before {
-  content: "";
+  content: '';
   background: #1590be;
 }
 
@@ -583,7 +583,7 @@ dd {
   border-start-start-radius: calc(5px - 1px);
 }
 .custom-title:before {
-  content: "";
+  content: '';
   width: 3px;
   height: 16px;
   background: #fff;
@@ -609,7 +609,7 @@ dd {
   background-repeat: no-repeat;
   background-position: center;
   &:before {
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     position: absolute;
@@ -638,7 +638,7 @@ dd {
   background-repeat: no-repeat;
   background-position: center;
   &:before {
-    content: "";
+    content: '';
     width: 100%;
     height: 100%;
     position: absolute;

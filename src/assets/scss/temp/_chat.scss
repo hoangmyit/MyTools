@@ -35,11 +35,13 @@
     color: $gray-800;
     text-transform: uppercase;
     padding: 8px 20px;
-    border:1px solid #ededf5;
+    border: 1px solid #ededf5;
     border-radius: 5px;
     margin-block-end: 5px;
 
-    &:hover, &:focus, &:active {
+    &:hover,
+    &:focus,
+    &:active {
       outline: none;
     }
 
@@ -49,10 +51,8 @@
     }
 
     &.active {
-		color: $white;
-		background: $primary;
-		
-    
+      color: $white;
+      background: $primary;
     }
   }
 }
@@ -70,7 +70,10 @@
   }
 }
 
-.main-chat-contacts-wrapper .main-img-user::after, .main-chat-list .main-img-user::after, .main-chat-header .main-img-user::after, .main-chat-body .main-img-user::after {
+.main-chat-contacts-wrapper .main-img-user::after,
+.main-chat-list .main-img-user::after,
+.main-chat-header .main-img-user::after,
+.main-chat-body .main-img-user::after {
   inset-inline-end: 1px;
   inset-block-end: 3px;
 }
@@ -81,17 +84,18 @@
   border-block-end: 1px solid $border;
   overflow: hidden;
 
-  .main-content-label, .card-table-two .card-title {
+  .main-content-label,
+  .card-table-two .card-title {
     margin-block-end: 15px;
     line-height: 1;
     padding-inline-start: 20px;
   }
 }
 .card-table-two {
-	padding: 20px;
+  padding: 20px;
 }
 .card-table-two .card-title {
-    font-size: 13px;
+  font-size: 13px;
 }
 @media (min-width: 992px) {
   .main-chat-contacts-wrapper {
@@ -102,14 +106,17 @@
   }
 }
 
-.card-table-two .main-chat-contacts-wrapper .card-title, .main-chat-contacts-wrapper .card-dashboard-eight .card-title, .card-dashboard-eight .main-chat-contacts-wrapper .card-title {
+.card-table-two .main-chat-contacts-wrapper .card-title,
+.main-chat-contacts-wrapper .card-dashboard-eight .card-title,
+.card-dashboard-eight .main-chat-contacts-wrapper .card-title {
   margin-block-end: 15px;
   line-height: 1;
-  padding-inline-start: 20px ;
+  padding-inline-start: 20px;
 }
 
 .main-chat-contacts-wrapper {
-  .lSSlideOuter, .lSSlideWrapper {
+  .lSSlideOuter,
+  .lSSlideWrapper {
     overflow: visible;
   }
 }
@@ -205,7 +212,8 @@
       }
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       cursor: pointer;
       background-color: $bg-active;
       border-block-start-color: $border;
@@ -213,7 +221,8 @@
       z-index: 1;
     }
 
-    &:hover:first-child, &:focus:first-child {
+    &:hover:first-child,
+    &:focus:first-child {
       border-block-start-color: transparent;
     }
 
@@ -343,14 +352,15 @@
     }
 
     .typcn {
-      line-height: .9;
+      line-height: 0.9;
 
       &::before {
         width: auto;
       }
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $primary;
     }
 
@@ -409,7 +419,7 @@
       .main-msg-wrapper {
         background-color: $primary;
         color: $white;
-	    	border-radius: 5px;
+        border-radius: 5px;
       }
     }
   }
@@ -517,7 +527,8 @@
     border-width: 0;
     border: 1px solid $border;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       box-shadow: none;
     }
   }
@@ -558,15 +569,15 @@
 }
 
 .main-msg-send {
-   color: $white;
-     font-size: 15px;
-     border: solid $border 1px;
-     border-radius: 5px;
-     padding: 5px 10px;
-     background: $primary;
-    i {
-      line-height: 1.5;
-    }
+  color: $white;
+  font-size: 15px;
+  border: solid $border 1px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: $primary;
+  i {
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -583,7 +594,7 @@
 
 @media (max-width: 380px) and (min-width: 305px) {
   .main-nav-line-chat .nav-link + .nav-link {
-   margin-block-start: 8px;
+    margin-block-start: 8px;
     margin-inline-start: 0px;
   }
 }
@@ -656,16 +667,16 @@
 .action-header {
   position: relative;
   background: $primary;
-    padding-block-start: 15px;
-    padding-inline-end: 13px;
-    padding-block-end: 15px;
-    padding-inline-start: 17px;
+  padding-block-start: 15px;
+  padding-inline-end: 13px;
+  padding-block-end: 15px;
+  padding-inline-start: 17px;
 }
 
 .ah-actions {
   z-index: 3;
   float: right !important;
-   inset-block-start: 3px;
+  inset-block-start: 3px;
   position: relative;
 }
 
@@ -696,7 +707,6 @@
     margin: 0 auto;
     line-height: 40px;
     text-align: center;
-
   }
 }
 
@@ -790,7 +800,8 @@
     }
   }
 
-  .justify-content-start, .justify-content-end {
+  .justify-content-start,
+  .justify-content-end {
     margin-block-end: 25px;
   }
 }
@@ -804,7 +815,7 @@
   .user_img_msg {
     height: 40px;
     width: 40px;
-    border:0px solid #ebeaf1;
+    border: 0px solid #ebeaf1;
   }
 
   .img_cont {
@@ -823,9 +834,9 @@
 .chat-box-single-line {
   height: 12px;
   margin-block-start: 7px;
-    margin-inline-end: 0px;
-    margin-block-end: 30px;
-    margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-block-end: 30px;
+  margin-inline-start: 0px;
   position: relative;
   text-align: center;
 }
@@ -871,7 +882,7 @@
     margin-inline-start: 10px;
     padding: 9px;
     position: relative;
-	  border-radius:6px;
+    border-radius: 6px;
   }
   .msg_cotainer {
     background-color: $primary-05;
@@ -881,11 +892,11 @@
     margin-block-start: auto;
     margin-block-end: auto;
     margin-inline-end: 10px;
-    background-color:#e4edf9;
+    background-color: #e4edf9;
     padding: 9px;
     position: relative;
-	border-radius:6px;
-	}
+    border-radius: 6px;
+  }
 
   .msg_time {
     position: absolute;
@@ -916,88 +927,90 @@
   }
 }
 .main-msg-wrapper.right {
-	position: relative;
-	background: $primary;
-	border: 1px solid $primary;
+  position: relative;
+  background: $primary;
+  border: 1px solid $primary;
 }
-.main-msg-wrapper.inset-inline-end:after, .main-msg-wrapper.inset-inline-end:before {
-	inset-inline-start: 100%;
-	inset-block-start: 50%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
+.main-msg-wrapper.inset-inline-end:after,
+.main-msg-wrapper.inset-inline-end:before {
+  inset-inline-start: 100%;
+  inset-block-start: 50%;
+  border: solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
 }
 
 .main-msg-wrapper.inset-inline-end:nth-child(1):before {
-	border-color: transparent;
-    border-inline-start-color: $primary;
-    border-width: 0px;
-    margin-block-start: -15px;
+  border-color: transparent;
+  border-inline-start-color: $primary;
+  border-width: 0px;
+  margin-block-start: -15px;
 }
 .main-msg-wrapper.inset-inline-end:nth-child(1):after {
-	border-color: transparent;
-    border-inline-start-color: $primary;
-    border-width: 8px;
-    margin-block-start: -10px;
+  border-color: transparent;
+  border-inline-start-color: $primary;
+  border-width: 8px;
+  margin-block-start: -10px;
 }
 
 .main-msg-wrapper.left {
-	position: relative;
+  position: relative;
 }
-.main-msg-wrapper.inset-inline-start:after, .main-msg-wrapper.inset-inline-start:before {
-	inset-inline-end: 100%;
-	inset-block-start: 50%;
-	border: solid transparent;
-	content: "";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
+.main-msg-wrapper.inset-inline-start:after,
+.main-msg-wrapper.inset-inline-start:before {
+  inset-inline-end: 100%;
+  inset-block-start: 50%;
+  border: solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
 }
 
 .main-msg-wrapper.inset-inline-start:nth-child(1):before {
-	border-color: transparent;
-    border-inline-end-color: $bg-active;
-    border-width: 0px;
-    margin-block-start: -15px;
+  border-color: transparent;
+  border-inline-end-color: $bg-active;
+  border-width: 0px;
+  margin-block-start: -15px;
 }
 .main-msg-wrapper.inset-inline-start:nth-child(1):after {
-	border-color: transparent;
-    border-inline-end-color: $primary-02;
-   border-width: 8px;
-    margin-block-start: -10px;
+  border-color: transparent;
+  border-inline-end-color: $primary-02;
+  border-width: 8px;
+  margin-block-start: -10px;
 }
-@media (max-width: 576px){
-	.main-nav-line-chat .nav-link {
-		padding: 10px 10px;
-	}
+@media (max-width: 576px) {
+  .main-nav-line-chat .nav-link {
+    padding: 10px 10px;
+  }
 }
-.modal-dialog.modal-dialog-right.chatbox .card-footer{
-  padding:1.25rem;
+.modal-dialog.modal-dialog-right.chatbox .card-footer {
+  padding: 1.25rem;
 }
-.main-chat-footer .nav-link{
-    color: #7987a1;
-    font-size: 15px;
-    border: solid #ededf5 1px;
-    border-radius: 5px;
-    line-height: 15px;
-    padding: 8px 10px;
-    background: #fff;
+.main-chat-footer .nav-link {
+  color: #7987a1;
+  font-size: 15px;
+  border: solid #ededf5 1px;
+  border-radius: 5px;
+  line-height: 15px;
+  padding: 8px 10px;
+  background: #fff;
 }
- .main-chat-footer .main-msg-send {
-    color: $white;
-    font-size: 15px;
-    border: solid $border 1px;
-    border-radius: 5px;
-    padding: 5px 10px;
-    background: $primary;
+.main-chat-footer .main-msg-send {
+  color: $white;
+  font-size: 15px;
+  border: solid $border 1px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: $primary;
   i {
     line-height: 1.5;
   }
- }
+}
 
 //  @media (min-width: 992px) {
 // .main-chat-body {
@@ -1010,12 +1023,11 @@
 //     height: 550px !important;
 // }}
 
-
 .chat-profile {
   padding: 8px;
   line-height: 1;
   color: $default-color;
-  i{
+  i {
     font-size: 14px;
   }
 }
@@ -1030,18 +1042,18 @@
   font-size: 14px;
   border: 1px solid $border;
 }
-@media (min-width: 992px){
+@media (min-width: 992px) {
   .main-content-app {
     height: calc(100vh - 250px);
     display: flex;
   }
   .main-chat-list {
-    height:calc(100% - 68px);
-      position: relative;
+    height: calc(100% - 68px);
+    position: relative;
   }
   .main-chat-body {
-      // height: 500px;
-     height: calc(100% - 105px);
+    // height: 500px;
+    height: calc(100% - 105px);
   }
   .chat-main {
     // height:calc(100% - 105px);

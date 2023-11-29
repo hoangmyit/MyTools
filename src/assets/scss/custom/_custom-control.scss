@@ -59,7 +59,7 @@
     width: 1rem;
     height: 1rem;
     pointer-events: none;
-    content: "";
+    content: '';
     background-color: $white;
     border: $form-border solid 1px;
   }
@@ -71,7 +71,7 @@
     display: block;
     width: 1rem;
     height: 1rem;
-    content: "";
+    content: '';
     background: no-repeat 50% / 50% 50%;
   }
 }
@@ -98,7 +98,8 @@
     }
 
     &:disabled {
-      &:checked ~ .custom-control-label::before, &:indeterminate ~ .custom-control-label::before {
+      &:checked ~ .custom-control-label::before,
+      &:indeterminate ~ .custom-control-label::before {
         background-color: rgba(51, 102, 255, 0.5);
       }
     }
@@ -139,7 +140,11 @@
       height: calc(1rem - 4px);
       background-color: $gray-500;
       border-radius: 0.5rem;
-      transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      transition:
+        transform 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
     }
   }
 
@@ -165,16 +170,17 @@
   display: inline-block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
-    padding-block-start: 0.375rem;
-    padding-inline-end: 1.75rem;
-    padding-block-end: 0.375rem;
-    padding-inline-start: 0.75rem;
+  padding-block-start: 0.375rem;
+  padding-inline-end: 1.75rem;
+  padding-block-end: 0.375rem;
+  padding-inline-start: 0.75rem;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: $gray-700;
   vertical-align: middle;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%233b4863' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem (center / 8px) 10px;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%233b4863' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
+    no-repeat right 0.75rem (center / 8px) 10px;
   background-color: $white;
   border: 1px solid $border;
   border-radius: 3px;
@@ -190,7 +196,8 @@
     }
   }
 
-  &[multiple], &[size]:not([size="1"]) {
+  &[multiple],
+  &[size]:not([size='1']) {
     height: auto;
     padding-inline-end: 0.75rem;
     background-image: none;
@@ -248,7 +255,7 @@
   }
 
   &:lang(en) ~ .custom-file-label::after {
-    content: "Browse";
+    content: 'Browse';
   }
 
   ~ .custom-file-label[data-browse]::after {
@@ -282,7 +289,7 @@
     padding: 0.375rem 0.75rem;
     line-height: 1.5;
     color: $gray-700;
-    content: "Browse";
+    content: 'Browse';
     background-color: $gray-200;
     border-inline-start: inherit;
     border-radius: 0 3px 3px 0;
@@ -299,8 +306,12 @@
   &:focus {
     outline: none;
 
-    &::-webkit-slider-thumb, &::-moz-range-thumb, &::-ms-thumb {
-      box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem rgba(51, 102, 255, 0.25);
+    &::-webkit-slider-thumb,
+    &::-moz-range-thumb,
+    &::-ms-thumb {
+      box-shadow:
+        0 0 0 1px $white,
+        0 0 0 0.2rem rgba(51, 102, 255, 0.25);
     }
   }
 
@@ -315,7 +326,10 @@
     background-color: $primary;
     border: 0;
     border-radius: 1rem;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition:
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
     appearance: none;
 
     &:active {
@@ -339,7 +353,10 @@
     background-color: $primary;
     border: 0;
     border-radius: 1rem;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition:
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
     appearance: none;
 
     &:active {
@@ -366,7 +383,10 @@
     background-color: $primary;
     border: 0;
     border-radius: 1rem;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition:
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
     appearance: none;
 
     &:active {
@@ -436,17 +456,25 @@
   }
 }
 
-.custom-control-label::before, .custom-file-label, .custom-select {
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+  transition:
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .custom-control-label::before, .custom-file-label, .custom-select {
+  .custom-control-label::before,
+  .custom-file-label,
+  .custom-select {
     transition: none;
   }
 }
 
-.custom-file, .custom-file-input {
+.custom-file,
+.custom-file-input {
   height: 38px;
 }
 
@@ -473,7 +501,7 @@
   width: 2rem;
   height: 2rem;
   pointer-events: none;
-  content: "";
+  content: '';
   background-color: #fff;
   border: #cdd4e2 solid 1px;
   border-radius: 35px;
@@ -485,160 +513,169 @@
   display: block;
   width: 2rem;
   height: 2rem;
-  content: "";
+  content: '';
   background: no-repeat 50% / 50% 50%;
   border-radius: 35px;
 }
-.custom-control-label-md::before, .custom-control-label-md::after {
-    inset-block-start: 0.25rem !important;
-    width: 1.5rem !important;
-    height: 1.5rem !important;
+.custom-control-label-md::before,
+.custom-control-label-md::after {
+  inset-block-start: 0.25rem !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
 }
-.custom-control-label-md::before, .custom-control-label-md::after {
-    inset-block-start: 0.25rem !important;
-    width: 1.5rem !important;
-    height: 1.5rem !important;
+.custom-control-label-md::before,
+.custom-control-label-md::after {
+  inset-block-start: 0.25rem !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
 }
 .custom-control-md {
-    min-height: 2rem !important;
+  min-height: 2rem !important;
 }
 .custom-control-label-md {
-    padding-inline-start: 8px;
-    padding-block-start: 6px;
+  padding-inline-start: 8px;
+  padding-block-start: 6px;
 }
 
-
-.custom-control-label-lg::before, .custom-control-label-lg::after {
-    inset-block-start: 0.25rem !important;
-    width: 2rem !important;
-    height: 2rem !important;
+.custom-control-label-lg::before,
+.custom-control-label-lg::after {
+  inset-block-start: 0.25rem !important;
+  width: 2rem !important;
+  height: 2rem !important;
 }
-.custom-control-label-lg::before, .custom-control-label-lg::after {
-    inset-block-start: 0.25rem !important;
-    width: 2rem !important;
-    height: 2rem !important;
+.custom-control-label-lg::before,
+.custom-control-label-lg::after {
+  inset-block-start: 0.25rem !important;
+  width: 2rem !important;
+  height: 2rem !important;
 }
 .custom-control-lg {
-    min-height: 2rem !important;
+  min-height: 2rem !important;
 }
 .custom-control-label-lg {
-    padding-inline-start: 15px;
-    padding-block-start: 10px;
+  padding-inline-start: 15px;
+  padding-block-start: 10px;
 }
-.custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
-    background-color: $primary;
-    opacity: 0.5;
+.custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: $primary;
+  opacity: 0.5;
 }
-.custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
-    background-color:$primary;
-    opacity: 0.5;
+.custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: $primary;
+  opacity: 0.5;
 }
 .custom-switch-input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
 .custom-switch-indicator {
-    display: inline-block;
-    height: 1.25rem;
-    width: 2.25rem;
-    background: #f0f0f2;
-    border-radius: 50px;
-    position: relative;
-    vertical-align: bottom;
-    transition: .3s border-color, .3s background-color;
+  display: inline-block;
+  height: 1.25rem;
+  width: 2.25rem;
+  background: #f0f0f2;
+  border-radius: 50px;
+  position: relative;
+  vertical-align: bottom;
+  transition:
+    0.3s border-color,
+    0.3s background-color;
 }
 .custom-switch-indicator:before {
-    content: '';
-    position: absolute;
-    height: calc(1.25rem - 4px);
-    width: calc(1.25rem - 4px);
-    inset-block-start: 1px;
-    inset-inline-start: 1px;
-    background: #fff;
-    border-radius: 50%;
-    transition: .3s left;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  content: '';
+  position: absolute;
+  height: calc(1.25rem - 4px);
+  width: calc(1.25rem - 4px);
+  inset-block-start: 1px;
+  inset-inline-start: 1px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s left;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
 }
-.custom-switch-input:checked~.custom-switch-indicator {
-    background: $primary;
+.custom-switch-input:checked ~ .custom-switch-indicator {
+  background: $primary;
 }
-.custom-switch-input:checked~.custom-switch-indicator:before {
-    inset-inline-start: calc(1rem + 1px);
+.custom-switch-input:checked ~ .custom-switch-indicator:before {
+  inset-inline-start: calc(1rem + 1px);
 }
 .custom-square {
-    border-radius: 0px !important;
+  border-radius: 0px !important;
 }
 .custom-square:before {
-    border-radius: 0px !important;
+  border-radius: 0px !important;
 }
 .custom-switch-indicator-lg {
-    display: inline-block;
-    height: 1.5rem;
-    width: 3rem;
-    background: #f5f6fb;
-    border-radius: 50px;
-    position: relative;
-    vertical-align: bottom;
-    border: 1px solid #ebeaf1;
-    transition: .3s border-color, .3s background-color;
+  display: inline-block;
+  height: 1.5rem;
+  width: 3rem;
+  background: #f5f6fb;
+  border-radius: 50px;
+  position: relative;
+  vertical-align: bottom;
+  border: 1px solid #ebeaf1;
+  transition:
+    0.3s border-color,
+    0.3s background-color;
 }
 .custom-switch-indicator-lg:before {
-    content: '';
-    position: absolute;
-    height: calc(1.5rem - 4px);
-    width: calc(1.5rem - 4px);
-    inset-block-start: 1px;
-    inset-inline-start: 1px;
-    background: #fff;
-    border-radius: 50%;
-    transition: .3s left;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  content: '';
+  position: absolute;
+  height: calc(1.5rem - 4px);
+  width: calc(1.5rem - 4px);
+  inset-block-start: 1px;
+  inset-inline-start: 1px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s left;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
 }
-.custom-switch-input:checked~.custom-switch-indicator-lg:before {
-    inset-inline-start: calc(1.46rem + 1px);
+.custom-switch-input:checked ~ .custom-switch-indicator-lg:before {
+  inset-inline-start: calc(1.46rem + 1px);
 }
 .custom-switch-indicator-xl {
-    display: inline-block;
-    height: 2rem;
-    width: 4rem;
-    background: #f5f6fb;
-    border-radius: 50px;
-    position: relative;
-    vertical-align: bottom;
-    border: 1px solid #ebeaf1;
-    transition: .3s border-color, .3s background-color;
+  display: inline-block;
+  height: 2rem;
+  width: 4rem;
+  background: #f5f6fb;
+  border-radius: 50px;
+  position: relative;
+  vertical-align: bottom;
+  border: 1px solid #ebeaf1;
+  transition:
+    0.3s border-color,
+    0.3s background-color;
 }
 .custom-switch-indicator-xl:before {
-    content: '';
-    position: absolute;
-    height: calc(2rem - 4px);
-    width: calc(2rem - 4px);
-    inset-block-start: 1px;
-    inset-inline-start: 1px;
-    background: #fff;
-    border-radius: 50%;
-    transition: .3s left;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  content: '';
+  position: absolute;
+  height: calc(2rem - 4px);
+  width: calc(2rem - 4px);
+  inset-block-start: 1px;
+  inset-inline-start: 1px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s left;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
 }
-.custom-switch-input:checked~.custom-switch-indicator-xl:before {
-    inset-inline-start: calc(1.96rem + 1px) !important;
+.custom-switch-input:checked ~ .custom-switch-indicator-xl:before {
+  inset-inline-start: calc(1.96rem + 1px) !important;
 }
 .form-select:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 .item-card .cardprice-2 span.type--strikethrough {
-    opacity: 0.5;
-    text-decoration: line-through;
-    font-size: 14px;
-    font-weight: 400;
+  opacity: 0.5;
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 400;
 }
 .item-card .cardprice-2 span {
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
 }
 .item-card .cardprice-2 {
-    position: absolute;
-    inset-inline-end: 15px;
+  position: absolute;
+  inset-inline-end: 15px;
 }

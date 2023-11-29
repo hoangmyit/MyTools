@@ -33,11 +33,9 @@
   --breakpoint-md: 992px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
 
 * {
@@ -237,7 +235,7 @@ a.close.disabled {
 
   &::before {
     display: block;
-    content: "";
+    content: '';
   }
 
   .embed-responsive-item,
@@ -359,7 +357,7 @@ a.close.disabled {
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
 
   pre {
@@ -411,7 +409,7 @@ a.close.disabled {
 /* ###### 6.3 Global  ###### */
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .main-body {
@@ -423,7 +421,7 @@ body {
 }
 
 .main-body::before {
-  content: "main";
+  content: 'main';
   position: fixed;
   inset-block-start: 45%;
   inset-inline-start: 70%;
@@ -553,7 +551,7 @@ body {
 }
 
 .avatar-status {
-  content: "";
+  content: '';
   position: absolute;
   inset-block-end: 0;
   inset-inline-end: 5px;
@@ -577,7 +575,7 @@ body {
   background: $success;
 
   &:before {
-    content: "";
+    content: '';
     inset-inline-end: -6px;
     width: 20px;
     height: 20px;
@@ -615,7 +613,7 @@ body {
   background: $success;
 
   &:before {
-    content: "";
+    content: '';
     inset-block-start: -4px;
     inset-inline-end: -4px;
     width: 15px;
@@ -721,7 +719,7 @@ body {
   background: #ee335e;
 
   &:before {
-    content: "";
+    content: '';
     inset-block-start: -4px;
     inset-inline-end: -4px;
     width: 15px;
@@ -1014,7 +1012,7 @@ body {
 
 .row-cards > {
   .col,
-  [class*="col-"] {
+  [class*='col-'] {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -1024,7 +1022,7 @@ body {
 
 .row-deck > {
   .col,
-  [class*="col-"] {
+  [class*='col-'] {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: stretch;
@@ -1032,7 +1030,7 @@ body {
   }
 
   .col .card,
-  [class*="col-"] .card {
+  [class*='col-'] .card {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
   }
@@ -1416,7 +1414,7 @@ body {
   box-shadow: 0 1px 2px 0 $black-05;
 
   &:before {
-    content: "";
+    content: '';
     opacity: 0;
     position: absolute;
     inset-block-start: 0.25rem;
@@ -1647,7 +1645,7 @@ pre {
 
 .sub-menu li a:before {
   margin-inline-end: 8px;
-  content: "";
+  content: '';
   width: inherit;
   height: inherit;
   border-width: 0;
@@ -1656,8 +1654,8 @@ pre {
   inset-block-start: 15px;
   z-index: 99;
   border-color: #bec5d0;
-  content: "\e92f";
-  font-family: "feather" !important;
+  content: '\e92f';
+  font-family: 'feather' !important;
   position: absolute;
   inset-block-start: 9px;
   inset-inline-start: 8px;
@@ -1680,7 +1678,7 @@ pre {
   }
 }
 
-.horizontalMenucontainer.main-header form[role="search"] {
+.horizontalMenucontainer.main-header form[role='search'] {
   width: inherit;
 }
 
@@ -1872,7 +1870,7 @@ pre {
 }
 
 .dropdown-menu-arrow:after {
-  content: "";
+  content: '';
   position: absolute;
   inset-block-start: -8.5px;
   inset-inline-end: 16px;
@@ -1911,7 +1909,7 @@ pre {
     overflow: visible !important;
 
     .progress-bar:after {
-      content: "";
+      content: '';
       width: 15px;
       height: 15px;
       border-radius: 50%;
@@ -2004,9 +2002,20 @@ pre {
 .card-table h4 {
   font-size: 21px;
   font-weight: 700;
-  font-family: "Archivo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    'Archivo',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
   color: #1c273c;
 }
 
@@ -2057,7 +2066,7 @@ pre {
 
 .success-widget h3 {
   &:before {
-    content: "";
+    content: '';
     position: relative;
     display: inline-block;
     width: 26%;
@@ -2067,7 +2076,7 @@ pre {
   }
 
   &:after {
-    content: "";
+    content: '';
     position: relative;
     display: inline-block;
     width: 26%;
@@ -2091,7 +2100,7 @@ pre {
   }
 
   &:before {
-    content: "";
+    content: '';
     position: relative;
     display: inline-block;
     width: 26%;
@@ -2101,7 +2110,7 @@ pre {
   }
 
   &:after {
-    content: "";
+    content: '';
     position: relative;
     display: inline-block;
     width: 26%;
@@ -2125,7 +2134,7 @@ pre {
   }
 
   &:before {
-    content: "";
+    content: '';
     position: relative;
     display: inline-block;
     width: 26%;
@@ -2135,7 +2144,7 @@ pre {
   }
 
   &:after {
-    content: "";
+    content: '';
     position: relative;
     display: inline-block;
     width: 26%;
@@ -2159,7 +2168,7 @@ pre {
   }
 
   &:before {
-    content: "";
+    content: '';
     position: relative;
     display: inline-block;
     width: 26%;
@@ -2169,7 +2178,7 @@ pre {
   }
 
   &:after {
-    content: "";
+    content: '';
     position: relative;
     display: inline-block;
     width: 26%;
@@ -2302,16 +2311,12 @@ pre {
 }
 
 .fa-circle:before {
-  content: "\f111";
+  content: '\f111';
 }
 
 .featured_icon.danger {
   border: 3px solid #ee6161;
-  background-image: linear-gradient(
-    -38deg,
-    #f32828 0%,
-    #f32828 100%
-  ) !important;
+  background-image: linear-gradient(-38deg, #f32828 0%, #f32828 100%) !important;
 }
 
 .featured_icon {
@@ -2330,7 +2335,7 @@ pre {
 }
 
 ul.timeline:before {
-  content: " ";
+  content: ' ';
   background: $border;
   display: inline-block;
   position: absolute;
@@ -2356,20 +2361,12 @@ ul.timeline:before {
 
 .featured_icon.success {
   border: 3px solid #25de8c;
-  background-image: linear-gradient(
-    -38deg,
-    #0ba360 0%,
-    #3cba92 100%
-  ) !important;
+  background-image: linear-gradient(-38deg, #0ba360 0%, #3cba92 100%) !important;
 }
 
 .featured_icon.warning {
   border: 3px solid #f09819;
-  background-image: linear-gradient(
-    -38deg,
-    #ff5858 0%,
-    #f09819 100%
-  ) !important;
+  background-image: linear-gradient(-38deg, #ff5858 0%, #f09819 100%) !important;
 }
 
 .featured_icon.teal {
@@ -2382,7 +2379,7 @@ ul.timeline:before {
 }
 
 .fa-genderless:before {
-  content: "\f22d";
+  content: '\f22d';
 }
 
 .fs-12 {
@@ -2866,7 +2863,7 @@ ul.timeline:before {
 }
 
 .lds-dual-ring:after {
-  content: " ";
+  content: ' ';
   display: block;
   width: 46px;
   height: 46px;
@@ -2912,7 +2909,7 @@ ul.timeline:before {
 }
 
 .lds-heart div:before {
-  content: " ";
+  content: ' ';
   position: absolute;
   display: block;
   width: 26px;
@@ -2934,7 +2931,7 @@ ul.timeline:before {
 }
 
 .lds-heart div:after {
-  content: " ";
+  content: ' ';
   position: absolute;
   display: block;
   width: 26px;
@@ -2942,7 +2939,7 @@ ul.timeline:before {
 }
 
 .lds-heart div:after {
-  content: " ";
+  content: ' ';
   position: absolute;
   display: block;
   width: 26px;
@@ -3068,7 +3065,7 @@ ul.timeline:before {
 }
 
 .lds-spinner div:after {
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   inset-block-start: 3px;
@@ -3506,7 +3503,7 @@ hr {
 }
 
 @media (max-width: 991px) {
-  form[role="search"].active input {
+  form[role='search'].active input {
     inset-block-start: 0.09rem !important;
   }
 
@@ -3528,7 +3525,7 @@ hr {
       z-index: 9999 !important;
     }
 
-    form[role="search"].active {
+    form[role='search'].active {
       position: fixed;
       inset-block-start: 0;
 
@@ -3584,7 +3581,7 @@ hr {
 }
 
 .main-mail-star .typcn-star:before {
-  content: "\e109";
+  content: '\e109';
   font-size: 20px;
   line-height: 0.8;
 }
@@ -3600,13 +3597,13 @@ hr {
 #morrisDonut1.morris-donut-wrapper-demo svg text {
   font-size: 12px !important;
   font-weight: 500 !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 #morrisDonut2.morris-donut-wrapper-demo svg text {
   font-size: 12px !important;
   font-weight: 500 !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .form-label {
@@ -3704,8 +3701,8 @@ div.dt-button-info h2 {
   border-color: $primary;
 }
 
-.bootstrap-tagsinput .badge [data-role="remove"]:after {
-  content: "×";
+.bootstrap-tagsinput .badge [data-role='remove']:after {
+  content: '×';
   margin-inline-start: 6px;
 }
 
@@ -3822,7 +3819,7 @@ div.dt-button-info h2 {
   }
 
   thead .sorting::after {
-    content: "\f3d0" !important;
+    content: '\f3d0' !important;
     inset-block-start: 49%;
     display: none !important;
   }
@@ -4049,11 +4046,7 @@ a.custom-blog-content:hover {
   transition: all 0.5s ease 0s;
   display: block;
   margin: 0 auto;
-  background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.5),
-    transparent 100%
-  );
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 100%);
 }
 
 .pro-img-box {
@@ -4072,8 +4065,11 @@ a.custom-blog-content:hover {
     font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 5px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition:
+      color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
   }
 }
 
@@ -4089,8 +4085,11 @@ a.custom-blog-content:hover {
     font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 5px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition:
+      color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
   }
 }
 
@@ -4106,8 +4105,11 @@ a.custom-blog-content:hover {
     font-size: 0.875rem;
     line-height: 1.5;
     border-radius: 5px;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition:
+      color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
   }
 }
 
@@ -4292,7 +4294,7 @@ a.custom-blog-content:hover {
 }
 
 .notification:before {
-  content: "";
+  content: '';
   position: absolute;
   inset-block-start: 40px;
   inset-block-end: 5px;
@@ -4368,7 +4370,7 @@ a.custom-blog-content:hover {
 }
 
 .notification .notification-body:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   border: 10px solid transparent;
@@ -4469,7 +4471,7 @@ a.custom-blog-content:hover {
     &:before {
       width: 100%;
       height: 100%;
-      content: "";
+      content: '';
       position: absolute;
       background-color: rgba($dark, 0.1);
       inset-inline-start: 0;
@@ -4701,22 +4703,12 @@ a.custom-blog-content:hover {
 .datepicker table tr td.active.disabled:hover {
   background-image: -moz-linear-gradient(to bottom, $primary, $primary);
   background-image: -ms-linear-gradient(to bottom, $primary, $primary);
-  background-image: -webkit-gradient(
-    linear,
-    0 0,
-    0 100%,
-    from($primary),
-    to($primary)
-  );
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($primary), to($primary));
   background-image: -webkit-linear-gradient(to bottom, $primary, $primary);
   background-image: -o-linear-gradient(to bottom, $primary, $primary);
   background-image: linear-gradient(to bottom, $primary, $primary);
   background-repeat: repeat-x;
-  filter: gradient(
-    startColorstr= "$primary",
-    endColorstr= "$primary",
-    GradientType=0
-  );
+  filter: gradient(startColorstr= '$primary', endColorstr= '$primary', GradientType=0);
   border-color: $primary;
 }
 
@@ -4737,21 +4729,11 @@ a.custom-blog-content:hover {
 .datepicker table tr td span.active.disabled:hover {
   background-image: -moz-linear-gradient(to bottom, $primary, $primary);
   background-image: -ms-linear-gradient(to bottom, $primary, $primary);
-  background-image: -webkit-gradient(
-    linear,
-    0 0,
-    0 100%,
-    from($primary),
-    to($primary)
-  );
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($primary), to($primary));
   background-image: -webkit-linear-gradient(to bottom, $primary, $primary);
   background-image: -o-linear-gradient(to bottom, $primary, $primary);
   background-image: linear-gradient(to bottom, $primary, $primary);
-  filter: gradient(
-    startColorstr= "$primary",
-    endColorstr= "$primary",
-    GradientType=0
-  );
+  filter: gradient(startColorstr= '$primary', endColorstr= '$primary', GradientType=0);
   border-color: $primary;
 }
 
@@ -4986,15 +4968,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   border-radius: 5px !important;
 }
 
-.pcr-app[data-theme="classic"] {
+.pcr-app[data-theme='classic'] {
   border-radius: 5px !important;
 }
 
-.pcr-app[data-theme="monolith"] {
+.pcr-app[data-theme='monolith'] {
   border-radius: 5px !important;
 }
 
-.pcr-app[data-theme="nano"] {
+.pcr-app[data-theme='nano'] {
   border-radius: 5px !important;
 }
 
@@ -5317,8 +5299,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 }
 
 .note-editor {
-  input[type="radio"],
-  input[type="checkbox"] {
+  input[type='radio'],
+  input[type='checkbox'] {
     margin-inline-end: 7px;
   }
 }
@@ -5749,11 +5731,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 }
 @media (min-width: 320px) and (max-width: 370px) {
   .chartjs-render-monitor {
-    margin-inline-end: 40px
+    margin-inline-end: 40px;
   }
 }
 .rtl.dark-theme .main-header-right .dropdown-menu:before {
-  content: "";
+  content: '';
   border-inline-end: 1px solid rgba(255, 255, 255, 0.2);
 }
 .dark-theme.error-page1 .tabs-menu1 ul li .nav-link.active {
@@ -5793,7 +5775,8 @@ select.table-border {
 .form-control-sm {
   padding: 0.25rem 0.5rem !important;
 }
-.react-datepicker__year-text--selected, .react-datepicker__month-text--keyboard-selected {
+.react-datepicker__year-text--selected,
+.react-datepicker__month-text--keyboard-selected {
   background-color: var(--primary-bg-color) !important;
   color: #fff !important;
 }
@@ -5802,28 +5785,29 @@ select.table-border {
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .main-contact-action {
-      inset-inline-end: 0px !important;
+    inset-inline-end: 0px !important;
   }
 }
 .year-date-section {
-  .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle {
+  .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle {
     display: none;
   }
-  .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle {
+  .react-datepicker-popper[data-placement^='top'] .react-datepicker__triangle {
     display: none;
   }
-  .react-datepicker-popper[data-placement^=bottom] {
+  .react-datepicker-popper[data-placement^='bottom'] {
     position: relative;
     top: -11px !important;
   }
-  .react-datepicker-popper[data-placement^=top] {
+  .react-datepicker-popper[data-placement^='top'] {
     position: relative;
     top: -106px !important;
   }
 }
 
 @media (min-width: 320px) and (max-width: 370px) {
-  .pie-chart,.donut-chart {
+  .pie-chart,
+  .donut-chart {
     .chartjs-render-monitor {
       position: relative;
       inset-inline-start: -25px;
@@ -5837,6 +5821,7 @@ select.table-border {
 .demo_changer .form_holder {
   padding: 0px;
 }
-.form-inline-edit,.form-edit-model {
-   z-index: -1;
+.form-inline-edit,
+.form-edit-model {
+  z-index: -1;
 }

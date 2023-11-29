@@ -14,7 +14,8 @@
       float: left;
     }
 
-    &:before, &:after {
+    &:before,
+    &:after {
       line-height: 18px;
       position: absolute;
     }
@@ -27,7 +28,7 @@
       border: 1px solid $form-border;
       inset-block-start: 1px;
       inset-inline-start: 0;
-      border-radius:3px;
+      border-radius: 3px;
     }
 
     &:after {
@@ -43,7 +44,7 @@
       background-color: $primary;
       line-height: 17px;
       display: none;
-      border-radius:3px;
+      border-radius: 3px;
     }
 
     &:empty {
@@ -61,10 +62,11 @@
     }
 
     &[disabled] + span {
-      opacity: .75;
+      opacity: 0.75;
 
-      &:before, &:after {
-        opacity: .75;
+      &:before,
+      &:after {
+        opacity: 0.75;
       }
     }
   }

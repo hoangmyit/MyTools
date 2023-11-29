@@ -3,10 +3,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  box-shadow: 0px 0px 51px 0px rgba(122, 128, 144, 0.08), 0px 6px 18px 0px rgba(122, 128, 144, 0.05);
+  box-shadow:
+    0px 0px 51px 0px rgba(122, 128, 144, 0.08),
+    0px 6px 18px 0px rgba(122, 128, 144, 0.05);
 
   .acc_section {
-    border: 1px solid  #eff2f7;
+    border: 1px solid #eff2f7;
     position: relative;
     z-index: 10;
     margin-block-start: -1px;
@@ -64,7 +66,7 @@
       }
 
       .acc_head h3:before {
-        content: "\e994";
+        content: '\e994';
         position: absolute;
         font-family: 'feather' !important;
         inset-inline-end: 15px;
@@ -76,7 +78,7 @@
     }
 
     .acc_head h3:before {
-      content: "\e9af";
+      content: '\e9af';
       position: absolute;
       font-family: 'feather' !important;
       inset-inline-end: 15px;

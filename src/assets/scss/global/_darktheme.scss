@@ -69,7 +69,7 @@
   }
 
   //
-  .breadcrumb-item+.breadcrumb-item::before {
+  .breadcrumb-item + .breadcrumb-item::before {
     float: none;
     padding-inline-end: 0.5rem;
     color: #d6dfe7;
@@ -245,7 +245,7 @@
     color: $dark-color;
   }
 
-  .datatable .rdt_TableBody .rdt_TableRow>div {
+  .datatable .rdt_TableBody .rdt_TableRow > div {
     border-inline-end: 1px solid $dark-border;
   }
 
@@ -257,7 +257,7 @@
     border: 1px solid $dark-border !important;
   }
 
-  .datatable .rdt_TableHead .rdt_TableHeadRow>div {
+  .datatable .rdt_TableHead .rdt_TableHeadRow > div {
     border-inline-end: 1px solid $dark-border;
   }
 
@@ -295,7 +295,7 @@
   }
 
   .sun-editor .se-svg,
-  .sun-editor button>svg {
+  .sun-editor button > svg {
     fill: $dark-color;
   }
 
@@ -459,7 +459,6 @@
   }
 
   .sun-editor .se-dialog {
-
     button,
     input,
     label {
@@ -472,7 +471,6 @@
   }
 
   .sun-editor {
-
     input,
     select,
     textarea {
@@ -487,7 +485,7 @@
   }
 
   .uselistdata {
-    div[role="heading"] {
+    div[role='heading'] {
       color: #fff;
       background-color: $dark-theme;
     }
@@ -527,11 +525,11 @@
       }
     }
 
-    .rdt_TableHead .rdt_TableHeadRow>div {
+    .rdt_TableHead .rdt_TableHeadRow > div {
       border-inline-end: 1px solid rgba(255, 255, 255, 0.1) !important;
     }
 
-    .rdt_TableBody .rdt_TableRow>div {
+    .rdt_TableBody .rdt_TableRow > div {
       border-inline-end: 1px solid rgba(255, 255, 255, 0.1) !important;
     }
 
@@ -798,7 +796,6 @@
   }
 
   .productdesc {
-
     .nav-tabs .nav-link.active,
     .dark-theme .nav-tabs .nav-link:hover,
     .dark-theme .nav-tabs .nav-link:focus {
@@ -875,8 +872,8 @@
     color: #fff !important;
   }
 
-  .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before,
-  .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::after {
+  .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::before,
+  .react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::after {
     border-bottom-color: #fff !important;
   }
 

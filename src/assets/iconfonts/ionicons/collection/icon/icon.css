@@ -17,7 +17,7 @@
   font-size: var(--ion-icon-size-small, 18px) !important;
 }
 
-:host(.icon-large){
+:host(.icon-large) {
   font-size: var(--ion-icon-size-large, 32px) !important;
 }
 

@@ -27,7 +27,7 @@
     "no-lone-blocks":"error",
     "no-empty":"off",
     "camelcase":"off",
-    "linebreak-style":"error",
+    "linebreak-style":["error", "window"],
     "semi": "error",
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "off",

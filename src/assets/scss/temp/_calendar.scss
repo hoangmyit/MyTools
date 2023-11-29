@@ -1,5 +1,4 @@
 .card--calendar {
-
   .card-title {
     color: #14112d;
     font-weight: 700;
@@ -24,7 +23,8 @@
       padding: 10px;
       margin-block-end: 5px;
 
-      .ui-datepicker-next::before, .ui-datepicker-prev::before {
+      .ui-datepicker-next::before,
+      .ui-datepicker-prev::before {
         inset-block-start: 8px;
       }
     }
@@ -77,7 +77,8 @@
 }
 
 @media (min-width: 576px) {
-  .card--calendar .ui-datepicker .ui-datepicker-calendar, .card--twelve .flot-chart {
+  .card--calendar .ui-datepicker .ui-datepicker-calendar,
+  .card--twelve .flot-chart {
     width: 100%;
   }
 }
@@ -100,7 +101,7 @@
     padding-block-start: 13px;
     padding-inline-end: 20px;
     padding-block-end: 13px;
-    padding-inline-start: 40px
+    padding-inline-start: 40px;
   }
 }
 
@@ -133,7 +134,8 @@
     border-inline-end-width: 0;
     position: relative;
 
-    &:first-child, &:last-child {
+    &:first-child,
+    &:last-child {
       border-radius: 0;
     }
 
@@ -143,7 +145,7 @@
       font-size: 10px;
       color: #37326d;
       margin-block-end: 8px;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
 
       span {
         color: #a5a0b1;
@@ -210,7 +212,8 @@
       font-weight: 500;
       font-size: 11px;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: #37326d;
       }
     }
@@ -273,7 +276,8 @@
     background-color: $primary;
     color: $white;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $primary;
       color: $white;
     }
@@ -282,7 +286,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .ui-datepicker .ui-datepicker-calendar td {
-    span, a {
+    span,
+    a {
       transition: none;
     }
   }
@@ -335,7 +340,8 @@
 }
 
 .main-content-calendar {
-  .container, .container-fluid {
+  .container,
+  .container-fluid {
     padding-block-start: 20px;
     padding-inline-end: 0px;
     padding-block-end: 0px;
@@ -345,7 +351,8 @@
 
 @media (min-width: 992px) {
   .main-content-calendar {
-    .container, .container-fluid {
+    .container,
+    .container-fluid {
       padding-block-start: 0;
     }
   }
@@ -371,7 +378,7 @@
   .ui-datepicker {
     .ui-datepicker-title {
       color: $primary;
-      letter-spacing: -.2px;
+      letter-spacing: -0.2px;
     }
 
     .ui-datepicker-calendar {
@@ -399,7 +406,8 @@
 
         padding: 0 1px;
 
-        span, a {
+        span,
+        a {
           padding: 4px 5px;
           font-family: Verdana, sans-serif;
           font-size: 11px;
@@ -424,7 +432,7 @@
     font-size: 21px;
     position: relative;
     margin-inline-end: 10px;
-    inset-block-start: -.5px;
+    inset-block-start: -0.5px;
   }
 
   &.exclude {
@@ -454,7 +462,16 @@
 .main-calendar {
   border-color: #e4e8f3;
 
-  .fc-content, .fc-divider, .fc-list-heading td, .fc-list-view, .fc-popover, .fc-row, tbody, td, th, thead {
+  .fc-content,
+  .fc-divider,
+  .fc-list-heading td,
+  .fc-list-view,
+  .fc-popover,
+  .fc-row,
+  tbody,
+  td,
+  th,
+  thead {
     border-color: #e4e8f3;
   }
 
@@ -497,17 +514,20 @@
       text-shadow: none;
       border-radius: 0;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: $gray-200;
       }
 
-      &.fc-prev-button, &.fc-next-button {
+      &.fc-prev-button,
+      &.fc-next-button {
         padding: 0;
         width: 38px;
         justify-content: center;
       }
 
-      &.fc-prev-button span, &.fc-next-button span {
+      &.fc-prev-button span,
+      &.fc-next-button span {
         margin: 0;
       }
 
@@ -530,11 +550,13 @@
     }
   }
 
-  .fc-icon-left-single-arrow, .fc-icon-right-single-arrow {
+  .fc-icon-left-single-arrow,
+  .fc-icon-right-single-arrow {
     inset-block-start: 0;
   }
 
-  .fc-icon-left-single-arrow::after, .fc-icon-right-single-arrow::after {
+  .fc-icon-left-single-arrow::after,
+  .fc-icon-right-single-arrow::after {
     font-family: 'Ionicons';
     font-size: 18px;
     font-weight: 400;
@@ -563,7 +585,8 @@
 
       > {
         thead {
-          th, td {
+          th,
+          td {
             border-color: #e4e8f3;
           }
         }
@@ -587,14 +610,15 @@
       padding: 5px 8px;
       position: relative;
       transition: all 0.2s ease-in-out;
-    margin-block-start: 2px;
-    margin-inline-end: 2px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
+      margin-block-start: 2px;
+      margin-inline-end: 2px;
+      margin-block-end: 0px;
+      margin-inline-start: 0px;
       min-width: 20px;
       text-align: center;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: $gray-900;
         background-color: $gray-100;
       }
@@ -629,44 +653,54 @@
       }
     }
 
-    &.fc-listMonth-view, &.fc-listWeek-view {
+    &.fc-listMonth-view,
+    &.fc-listWeek-view {
       border-width: 0;
     }
 
-    &.fc-listMonth-view .fc-scroller, &.fc-listWeek-view .fc-scroller {
-    padding-block-start: 0px;
-    padding-inline-end: 20px;
-    padding-block-end: 20px;
-    padding-inline-start: 20px;
+    &.fc-listMonth-view .fc-scroller,
+    &.fc-listWeek-view .fc-scroller {
+      padding-block-start: 0px;
+      padding-inline-end: 20px;
+      padding-block-end: 20px;
+      padding-inline-start: 20px;
     }
 
-    &.fc-listMonth-view .fc-list-table, &.fc-listWeek-view .fc-list-table {
+    &.fc-listMonth-view .fc-list-table,
+    &.fc-listWeek-view .fc-list-table {
       border-collapse: separate;
       display: block;
     }
 
-    &.fc-listMonth-view .fc-list-table > tbody, &.fc-listWeek-view .fc-list-table > tbody {
+    &.fc-listMonth-view .fc-list-table > tbody,
+    &.fc-listWeek-view .fc-list-table > tbody {
       display: flex;
       flex-wrap: wrap;
     }
 
-    &.fc-listMonth-view .fc-list-heading, &.fc-listWeek-view .fc-list-heading {
+    &.fc-listMonth-view .fc-list-heading,
+    &.fc-listWeek-view .fc-list-heading {
       flex: 0 0 20%;
       max-width: 20%;
       margin-block-start: 15px;
     }
 
-    &.fc-listMonth-view .fc-list-heading:first-child, &.fc-listWeek-view .fc-list-heading:first-child, &.fc-listMonth-view .fc-list-heading:first-child + .fc-list-item, &.fc-listWeek-view .fc-list-heading:first-child + .fc-list-item {
+    &.fc-listMonth-view .fc-list-heading:first-child,
+    &.fc-listWeek-view .fc-list-heading:first-child,
+    &.fc-listMonth-view .fc-list-heading:first-child + .fc-list-item,
+    &.fc-listWeek-view .fc-list-heading:first-child + .fc-list-item {
       margin-block-start: 0;
     }
 
-    &.fc-listMonth-view .fc-list-heading td, &.fc-listWeek-view .fc-list-heading td {
+    &.fc-listMonth-view .fc-list-heading td,
+    &.fc-listWeek-view .fc-list-heading td {
       background-color: transparent;
       border-width: 0;
       padding: 0;
     }
 
-    &.fc-listMonth-view .fc-list-heading-main, &.fc-listWeek-view .fc-list-heading-main {
+    &.fc-listMonth-view .fc-list-heading-main,
+    &.fc-listWeek-view .fc-list-heading-main {
       display: block;
       font-size: 11px;
       text-transform: uppercase;
@@ -676,7 +710,8 @@
       text-align: center;
     }
 
-    &.fc-listMonth-view .fc-list-heading-main span:last-child, &.fc-listWeek-view .fc-list-heading-main span:last-child {
+    &.fc-listMonth-view .fc-list-heading-main span:last-child,
+    &.fc-listWeek-view .fc-list-heading-main span:last-child {
       display: block;
       font-size: 30px;
       font-weight: 700;
@@ -686,11 +721,15 @@
       line-height: 1;
     }
 
-    &.fc-listMonth-view .fc-list-heading-main.now, &.fc-listWeek-view .fc-list-heading-main.now, &.fc-listMonth-view .fc-list-heading-main.now span:last-child, &.fc-listWeek-view .fc-list-heading-main.now span:last-child {
+    &.fc-listMonth-view .fc-list-heading-main.now,
+    &.fc-listWeek-view .fc-list-heading-main.now,
+    &.fc-listMonth-view .fc-list-heading-main.now span:last-child,
+    &.fc-listWeek-view .fc-list-heading-main.now span:last-child {
       color: $primary;
     }
 
-    &.fc-listMonth-view .fc-list-item, &.fc-listWeek-view .fc-list-item {
+    &.fc-listMonth-view .fc-list-item,
+    &.fc-listWeek-view .fc-list-item {
       flex: 0 0 calc(80% - 5px);
       max-width: calc(80% - 5px);
       display: flex;
@@ -701,71 +740,83 @@
     }
 
     &.fc-listMonth-view .fc-list-item {
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         cursor: pointer;
       }
     }
 
     &.fc-listWeek-view .fc-list-item {
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         cursor: pointer;
       }
     }
 
     &.fc-listMonth-view .fc-list-item {
-      &:hover td, &:focus td {
+      &:hover td,
+      &:focus td {
         background-color: transparent;
       }
     }
 
     &.fc-listWeek-view .fc-list-item {
-      &:hover td, &:focus td {
+      &:hover td,
+      &:focus td {
         background-color: transparent;
       }
     }
 
-    &.fc-listMonth-view .fc-list-item > td, &.fc-listWeek-view .fc-list-item > td {
+    &.fc-listMonth-view .fc-list-item > td,
+    &.fc-listWeek-view .fc-list-item > td {
       border-width: 0;
     }
 
-    &.fc-listMonth-view .fc-list-item > td.fc-list-item-time, &.fc-listWeek-view .fc-list-item > td.fc-list-item-time {
+    &.fc-listMonth-view .fc-list-item > td.fc-list-item-time,
+    &.fc-listWeek-view .fc-list-item > td.fc-list-item-time {
       border-block-start: 1px solid $gray-200;
       border-inline-end: 1px solid $gray-200;
       box-sizing: border-box;
     }
 
-    &.fc-listMonth-view .fc-list-item > td.fc-list-item-title, &.fc-listWeek-view .fc-list-item > td.fc-list-item-title {
+    &.fc-listMonth-view .fc-list-item > td.fc-list-item-title,
+    &.fc-listWeek-view .fc-list-item > td.fc-list-item-title {
       border-block-end: 1px solid $gray-200;
       border-inline-end: 1px solid $gray-200;
       box-sizing: border-box;
     }
 
-    &.fc-listMonth-view .fc-list-item + .fc-list-item, &.fc-listWeek-view .fc-list-item + .fc-list-item {
+    &.fc-listMonth-view .fc-list-item + .fc-list-item,
+    &.fc-listWeek-view .fc-list-item + .fc-list-item {
       margin-inline-start: 20%;
     }
 
-    &.fc-listMonth-view .fc-list-item-marker, &.fc-listWeek-view .fc-list-item-marker {
+    &.fc-listMonth-view .fc-list-item-marker,
+    &.fc-listWeek-view .fc-list-item-marker {
       display: none;
     }
 
-    &.fc-listMonth-view .fc-list-item-time, &.fc-listWeek-view .fc-list-item-time {
-    padding-block-start: 12px;
-    padding-inline-end: 15px;
-    padding-block-end: 2px;
-    padding-inline-start: 15px;
+    &.fc-listMonth-view .fc-list-item-time,
+    &.fc-listWeek-view .fc-list-item-time {
+      padding-block-start: 12px;
+      padding-inline-end: 15px;
+      padding-block-end: 2px;
+      padding-inline-start: 15px;
       font-size: 13px;
       text-transform: capitalize;
       width: 100%;
     }
 
-    &.fc-listMonth-view .fc-list-item-title, &.fc-listWeek-view .fc-list-item-title {
-    padding-block-start: 0px;
-    padding-inline-end: 15px;
-    padding-block-end: 12px;
-    padding-inline-start: 15px;
+    &.fc-listMonth-view .fc-list-item-title,
+    &.fc-listWeek-view .fc-list-item-title {
+      padding-block-start: 0px;
+      padding-inline-end: 15px;
+      padding-block-end: 12px;
+      padding-inline-start: 15px;
     }
 
-    &.fc-listMonth-view .fc-list-item-title a, &.fc-listWeek-view .fc-list-item-title a {
+    &.fc-listMonth-view .fc-list-item-title a,
+    &.fc-listWeek-view .fc-list-item-title a {
       display: block;
       font-weight: 700;
       font-size: 15px;
@@ -773,7 +824,8 @@
       color: $gray-900;
     }
 
-    &.fc-listMonth-view .fc-list-item-title .fc-desc, &.fc-listWeek-view .fc-list-item-title .fc-desc {
+    &.fc-listMonth-view .fc-list-item-title .fc-desc,
+    &.fc-listWeek-view .fc-list-item-title .fc-desc {
       font-size: 13px;
       line-height: 1.375;
       display: block;
@@ -788,7 +840,8 @@
       color: $white;
       border-radius: 1px;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         background-color: $primary;
         color: $white;
         border-radius: 1px;
@@ -902,7 +955,8 @@
 
 @media (max-width: 575px) {
   .main-calendar .fc-header-toolbar button {
-    &.fc-prev-button, &.fc-next-button {
+    &.fc-prev-button,
+    &.fc-next-button {
       width: 32px;
       height: 32px;
     }
@@ -914,7 +968,11 @@
       font-size: 11px;
     }
 
-    &.fc-month-button, &.fc-agendaWeek-button, &.fc-agendaDay-button, &.fc-listWeek-button, &.fc-listMonth-button {
+    &.fc-month-button,
+    &.fc-agendaWeek-button,
+    &.fc-agendaDay-button,
+    &.fc-listWeek-button,
+    &.fc-listMonth-button {
       text-indent: -9999px;
       width: 32px;
       height: 32px;
@@ -922,7 +980,11 @@
       color: transparent;
     }
 
-    &.fc-month-button::before, &.fc-agendaWeek-button::before, &.fc-agendaDay-button::before, &.fc-listWeek-button::before, &.fc-listMonth-button::before {
+    &.fc-month-button::before,
+    &.fc-agendaWeek-button::before,
+    &.fc-agendaDay-button::before,
+    &.fc-listWeek-button::before,
+    &.fc-listMonth-button::before {
       position: absolute;
       inset-block-start: 6px;
       inset-inline-start: 10px;
@@ -946,7 +1008,8 @@
       content: 'D';
     }
 
-    &.fc-listWeek-button::before, &.fc-listMonth-button::before {
+    &.fc-listWeek-button::before,
+    &.fc-listMonth-button::before {
       content: 'L';
       inset-inline-start: 11px;
     }
@@ -955,8 +1018,9 @@
 
 @media (min-width: 992px) {
   .main-calendar {
-    .fc-icon-left-single-arrow::after, .fc-icon-right-single-arrow::after {
-      line-height: .75;
+    .fc-icon-left-single-arrow::after,
+    .fc-icon-right-single-arrow::after {
+      line-height: 0.75;
     }
   }
 }
@@ -969,11 +1033,13 @@
 
 @media (max-width: 991.98px) {
   .main-calendar .fc-view > table > thead {
-    th:first-child, td:first-child {
+    th:first-child,
+    td:first-child {
       border-inline-start-width: 0;
     }
 
-    th:last-child, td:last-child {
+    th:last-child,
+    td:last-child {
       border-inline-end-width: 0;
     }
   }
@@ -1012,7 +1078,8 @@
 
 @media (min-width: 992px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-scroller, &.fc-listWeek-view .fc-scroller {
+    &.fc-listMonth-view .fc-scroller,
+    &.fc-listWeek-view .fc-scroller {
       padding: 0;
     }
   }
@@ -1020,7 +1087,8 @@
 
 @media (min-width: 576px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-heading, &.fc-listWeek-view .fc-list-heading {
+    &.fc-listMonth-view .fc-list-heading,
+    &.fc-listWeek-view .fc-list-heading {
       flex: 0 0 15%;
       max-width: 15%;
     }
@@ -1029,7 +1097,8 @@
 
 @media (min-width: 768px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-heading, &.fc-listWeek-view .fc-list-heading {
+    &.fc-listMonth-view .fc-list-heading,
+    &.fc-listWeek-view .fc-list-heading {
       flex: 0 0 12%;
       max-width: 12%;
     }
@@ -1038,7 +1107,8 @@
 
 @media (min-width: 992px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-heading, &.fc-listWeek-view .fc-list-heading {
+    &.fc-listMonth-view .fc-list-heading,
+    &.fc-listWeek-view .fc-list-heading {
       flex: 0 0 10%;
       max-width: 10%;
     }
@@ -1047,7 +1117,8 @@
 
 @media (min-width: 1200px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-heading, &.fc-listWeek-view .fc-list-heading {
+    &.fc-listMonth-view .fc-list-heading,
+    &.fc-listWeek-view .fc-list-heading {
       flex: 0 0 8%;
       max-width: 8%;
     }
@@ -1056,7 +1127,8 @@
 
 @media (min-width: 576px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-item, &.fc-listWeek-view .fc-list-item {
+    &.fc-listMonth-view .fc-list-item,
+    &.fc-listWeek-view .fc-list-item {
       flex: 0 0 calc(85% - 5px);
       max-width: calc(85% - 5px);
     }
@@ -1065,7 +1137,8 @@
 
 @media (min-width: 768px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-item, &.fc-listWeek-view .fc-list-item {
+    &.fc-listMonth-view .fc-list-item,
+    &.fc-listWeek-view .fc-list-item {
       flex: 0 0 calc(88% - 5px);
       max-width: calc(88% - 5px);
     }
@@ -1074,7 +1147,8 @@
 
 @media (min-width: 992px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-item, &.fc-listWeek-view .fc-list-item {
+    &.fc-listMonth-view .fc-list-item,
+    &.fc-listWeek-view .fc-list-item {
       flex: 0 0 calc(90% - 5px);
       max-width: calc(90% - 5px);
     }
@@ -1083,7 +1157,8 @@
 
 @media (min-width: 1200px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-item, &.fc-listWeek-view .fc-list-item {
+    &.fc-listMonth-view .fc-list-item,
+    &.fc-listWeek-view .fc-list-item {
       flex: 0 0 calc(92% - 5px);
       max-width: calc(92% - 5px);
     }
@@ -1092,7 +1167,8 @@
 
 @media (min-width: 576px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-item + .fc-list-item, &.fc-listWeek-view .fc-list-item + .fc-list-item {
+    &.fc-listMonth-view .fc-list-item + .fc-list-item,
+    &.fc-listWeek-view .fc-list-item + .fc-list-item {
       margin-inline-start: 15%;
     }
   }
@@ -1100,7 +1176,8 @@
 
 @media (min-width: 768px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-item + .fc-list-item, &.fc-listWeek-view .fc-list-item + .fc-list-item {
+    &.fc-listMonth-view .fc-list-item + .fc-list-item,
+    &.fc-listWeek-view .fc-list-item + .fc-list-item {
       margin-inline-start: 12%;
     }
   }
@@ -1108,7 +1185,8 @@
 
 @media (min-width: 992px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-item + .fc-list-item, &.fc-listWeek-view .fc-list-item + .fc-list-item {
+    &.fc-listMonth-view .fc-list-item + .fc-list-item,
+    &.fc-listWeek-view .fc-list-item + .fc-list-item {
       margin-inline-start: 10%;
     }
   }
@@ -1116,7 +1194,8 @@
 
 @media (min-width: 1200px) {
   .main-calendar .fc-view {
-    &.fc-listMonth-view .fc-list-item + .fc-list-item, &.fc-listWeek-view .fc-list-item + .fc-list-item {
+    &.fc-listMonth-view .fc-list-item + .fc-list-item,
+    &.fc-listWeek-view .fc-list-item + .fc-list-item {
       margin-inline-start: 8%;
     }
   }
@@ -1192,7 +1271,7 @@
       font-size: 32px;
       line-height: 0;
       margin-inline-end: 10px;
-      opacity: .5;
+      opacity: 0.5;
     }
   }
 
@@ -1235,7 +1314,8 @@
       position: relative;
       transition: all 0.2s ease-in-out;
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         color: $white;
       }
 
@@ -1262,7 +1342,8 @@
     background-color: $white;
   }
 
-  .event-start-date, .event-end-date {
+  .event-start-date,
+  .event-end-date {
     color: $gray-900;
     font-weight: 500;
   }
@@ -1335,14 +1416,14 @@
 }
 
 .fc-datepicker.main-datepicker.hasDatepicker {
-    border:1px solid $border;
+  border: 1px solid $border;
 }
 @media (min-width: 320px) and (max-width: 568px) {
-  .ui-datepicker-calendar{
+  .ui-datepicker-calendar {
     width: 100%;
   }
   .ui-datepicker .ui-datepicker-calendar td,
-  .ui-datepicker .ui-datepicker-calendar th{
+  .ui-datepicker .ui-datepicker-calendar th {
     text-align: center;
   }
 }

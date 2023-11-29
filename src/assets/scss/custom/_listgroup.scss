@@ -10,7 +10,8 @@
   color: #434f63;
   text-align: inherit;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     z-index: 0;
     color: $default-color;
     text-decoration: none;
@@ -42,7 +43,8 @@
     border-end-start-radius: 3px;
   }
 
-  &.disabled, &:disabled {
+  &.disabled,
+  &:disabled {
     color: $gray-600;
     pointer-events: none;
     background-color: $white;
@@ -201,7 +203,8 @@
   background: $primary-02 !important;
 
   &.list-group-item-action {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $primary;
       background-color: $primary-02;
     }
@@ -219,7 +222,8 @@
   background-color: rgba(247, 79, 117, 0.13) !important;
 
   &.list-group-item-action {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #3f4654;
       background-color: #cacfdb;
     }
@@ -234,10 +238,11 @@
 
 .list-group-item-success {
   color: $success !important;
-  background-color: rgba(26, 156, 134,0.13) !important;
+  background-color: rgba(26, 156, 134, 0.13) !important;
 
   &.list-group-item-action {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #1f5c01;
       background-color: #b9e3a5;
     }
@@ -255,7 +260,8 @@
   background-color: rgba(25, 192, 192, 0.13) !important;
 
   &.list-group-item-action {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #0c5460;
       background-color: #abdde5;
     }
@@ -270,10 +276,11 @@
 
 .list-group-item-warning {
   color: $warning !important;
-  background-color: rgba(255, 189, 90,0.13) !important;
+  background-color: rgba(255, 189, 90, 0.13) !important;
 
   &.list-group-item-action {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #856404;
       background-color: #ffe8a1;
     }
@@ -288,10 +295,11 @@
 
 .list-group-item-danger {
   color: $danger !important;
-  background-color: rgba(243, 67, 67,0.13) !important;
+  background-color: rgba(243, 67, 67, 0.13) !important;
 
   &.list-group-item-action {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #721c24;
       background-color: #f1b0b7;
     }
@@ -309,7 +317,8 @@
   background-color: #fcfcfd;
 
   &.list-group-item-action {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #7f7f81;
       background-color: #ededf3;
     }
@@ -327,7 +336,8 @@
   background-color: #c8ccd3;
 
   &.list-group-item-action {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #1f2533;
       background-color: #babfc8;
     }
@@ -388,91 +398,91 @@
 }
 
 .list-style-1 {
-    list-style: inherit;
-    padding-inline-start: inherit;
+  list-style: inherit;
+  padding-inline-start: inherit;
 }
 
 .list-style-1 ul {
-    list-style: inherit;
-    padding-inline-start: 30px;
+  list-style: inherit;
+  padding-inline-start: 30px;
 }
 
 .list-style-1 li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .list-style2 {
-    list-style: decimal;
-    padding-inline-start: inherit;
+  list-style: decimal;
+  padding-inline-start: inherit;
 }
 
 .list-style2 ul {
-    list-style: decimal;
-    padding-inline-start: 30px;
+  list-style: decimal;
+  padding-inline-start: 30px;
 }
 
 .list-style2 li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .list-style3 {
-    list-style: circle !important;
-    padding-inline-start: inherit;
+  list-style: circle !important;
+  padding-inline-start: inherit;
 }
 
 .list-style3 ul {
-    list-style: decimal;
-    padding-inline-start: 30px;
+  list-style: decimal;
+  padding-inline-start: 30px;
 }
 
 .list-style3 li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .list-style4 {
-    list-style: lower-alpha;
-    padding-inline-start: inherit;
+  list-style: lower-alpha;
+  padding-inline-start: inherit;
 }
 
 .list-style4 ul {
-    list-style: decimal;
-    padding-inline-start: 30px;
+  list-style: decimal;
+  padding-inline-start: 30px;
 }
 
 .list-style4 li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .list-style5 {
-    list-style: square;
-    padding-inline-start: inherit;
+  list-style: square;
+  padding-inline-start: inherit;
 }
 
 .list-style5 ul {
-    list-style: decimal;
-    padding-inline-start: 30px;
+  list-style: decimal;
+  padding-inline-start: 30px;
 }
 
 .list-style5 li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .list-style6 {
-    list-style: lower-roman;
-    padding-inline-start: inherit;
+  list-style: lower-roman;
+  padding-inline-start: inherit;
 }
 
 .list-style6 ul {
-    list-style: decimal;
-    padding-inline-start: 30px;
+  list-style: decimal;
+  padding-inline-start: 30px;
 }
 
 .list-style6 li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .order-list li {
-    line-height: 30px;
+  line-height: 30px;
 }
 .paragraph-list {
   list-style: lower-roman;

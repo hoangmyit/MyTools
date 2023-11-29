@@ -1,5 +1,5 @@
 ///* ###### globalFilepond  ###### */
-.filepond--credits{
+.filepond--credits {
   display: none !important;
 }
 
@@ -10,7 +10,7 @@
 .form-control::-webkit-file-upload-button {
   color: #fff;
   background-color: $primary-dark !important;
-  border-inline-end:1px solid  $primary-dark !important
+  border-inline-end: 1px solid $primary-dark !important;
 }
 .form-control:hover:not(disabled):not([readonly])::-webkit-file-upload-button {
   background-color: $primary !important;

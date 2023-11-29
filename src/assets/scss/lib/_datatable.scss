@@ -3,7 +3,8 @@
 table.dataTable {
   border: 1px solid $border;
   thead {
-    th, td {
+    th,
+    td {
       border-block-start-width: 0;
       border-block-end-width: 0;
       padding: 15px 10px;
@@ -12,13 +13,15 @@ table.dataTable {
       color: $gray-900;
     }
 
-    .sorting_asc, .sorting_desc {
+    .sorting_asc,
+    .sorting_desc {
       background-image: none;
       background-color: $white;
       position: relative;
     }
 
-    .sorting_asc::after, .sorting_desc::after {
+    .sorting_asc::after,
+    .sorting_desc::after {
       font-family: 'Ionicons';
       font-size: 11px;
       position: absolute;
@@ -39,7 +42,8 @@ table.dataTable {
       background-image: none;
       position: relative;
 
-      &::before, &::after {
+      &::before,
+      &::after {
         font-family: 'Ionicons';
         font-size: 11px;
         position: absolute;
@@ -59,8 +63,7 @@ table.dataTable {
     }
   }
 
-
-  &.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::before {
+  &.dtr-inline.collapsed > tbody > tr[role='row'] > td:first-child::before {
     inset-block-start: 9.5px;
     inset-inline-start: 7px;
     width: 16px;
@@ -106,7 +109,7 @@ table.dataTable {
         border-radius: 3px;
 
         .select2-selection__rendered {
-          line-height: 32px; 
+          line-height: 32px;
         }
 
         .select2-selection__arrow {
@@ -169,10 +172,11 @@ table.dataTable {
 
       &.disabled {
         background-color: transparent;
-        color: $gray-300  !important;
+        color: $gray-300 !important;
 
-        &:hover, &:focus {
-          color: $gray-300  !important;
+        &:hover,
+        &:focus {
+          color: $gray-300 !important;
         }
       }
 
@@ -184,7 +188,8 @@ table.dataTable {
         margin-inline-start: 3px;
       }
 
-      &:hover, &:focus {
+      &:hover,
+      &:focus {
         border: 0;
         background-image: none;
         background-color: transparent;
@@ -197,7 +202,8 @@ table.dataTable {
         background-color: $primary;
         color: $white !important;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           border: 0;
           background-image: none;
           background-color: $primary;
@@ -207,7 +213,6 @@ table.dataTable {
     }
   }
 }
-
 
 @media (min-width: 576px) {
   .dataTables_wrapper .dataTables_filter {
@@ -251,7 +256,10 @@ table.dataTable {
 }
 
 table.dataTable thead {
-  .sorting_asc:before, .sorting_desc:before, .sorting_asc_disabled:before, .sorting_desc_disabled:before {
+  .sorting_asc:before,
+  .sorting_desc:before,
+  .sorting_asc_disabled:before,
+  .sorting_desc_disabled:before {
     display: none;
   }
 }
@@ -260,7 +268,7 @@ table.dataTable thead {
   .pagination .page-link {
     padding: 0.5rem 0.75rem;
     background-color: $gray-100;
-    border: 1px solid $border
+    border: 1px solid $border;
   }
 
   .page-item.active .page-link {
@@ -277,15 +285,16 @@ table.dataTable thead {
     background-color: #ffffff;
     width: 65px;
     color: #7a839b;
-    FONT-WEIGHT: 100;
+    font-weight: 100;
     font-size: 12px;
   }
 }
- .page-item.next a{
-     width: 64px;
- }
+.page-item.next a {
+  width: 64px;
+}
 table.dataTable tfoot {
-  th, td {
+  th,
+  td {
     padding-block-start: 10px;
     padding-inline-end: 18px;
     padding-block-end: 6px;
@@ -293,18 +302,21 @@ table.dataTable tfoot {
     border-block-start: 1px solid $gray-200;
   }
 }
-.table-responsive.hoverable-table{
-	position: relative;
+.table-responsive.hoverable-table {
+  position: relative;
 }
-.hoverable-table .btn-primary{
-	position: absolute;
-    margin-inline-start: 98px;
-    inset-block-start: 0px;
-    padding: 7px 16px;
-	z-index:99;
+.hoverable-table .btn-primary {
+  position: absolute;
+  margin-inline-start: 98px;
+  inset-block-start: 0px;
+  padding: 7px 16px;
+  z-index: 99;
 }
 
-#basic-datatable,#responsive-datatable,#delete-datatable,#file-datatable {
+#basic-datatable,
+#responsive-datatable,
+#delete-datatable,
+#file-datatable {
   .select2.select2-container.select2-container--default.select2-container--below.select2-container--focus {
     width: 100% !important;
   }
@@ -314,4 +326,3 @@ table.dataTable tfoot {
     width: auto !important;
   }
 }
-

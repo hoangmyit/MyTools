@@ -111,21 +111,21 @@
   .showcode {
     margin-block-start: 25px;
   }
-  .dropdown-menu[data-popper-placement^="right"] {
+  .dropdown-menu[data-popper-placement^='right'] {
     transform: translate3d(60.5px, 44px, 0px) !important;
   }
-  .rtl .dropdown-menu[data-popper-placement^="right"] {
+  .rtl .dropdown-menu[data-popper-placement^='right'] {
     transform: translate3d(-25.5px, 44px, 0px) !important;
   }
 }
 //
 @media (max-width: 575px) {
-  .bs-popover-start[data-popper-placement^="left"],
-  .bs-popover-auto[data-popper-placement^="left"] {
+  .bs-popover-start[data-popper-placement^='left'],
+  .bs-popover-auto[data-popper-placement^='left'] {
     transform: translate3d(-20px, 1250px, 0px) !important;
   }
-  .bs-popover-end[data-popper-placement^="right"],
-  .bs-popover-auto[data-popper-placement^="right"] {
+  .bs-popover-end[data-popper-placement^='right'],
+  .bs-popover-auto[data-popper-placement^='right'] {
     transform: translate3d(41px, 1095px, 0px) !important;
   }
 }
@@ -989,7 +989,7 @@
 }
 /**** dropdown ****/
 .dropdown-toggle::after {
-  content: "";
+  content: '';
   border-inline-end: 0.4em solid transparent;
   border-inline-start: 0.4em solid transparent;
 }
@@ -1050,20 +1050,23 @@
   .ql-clipboard {
     left: 0 !important;
   }
-  .popup-map,.mapleaflet,.circle-map {
+  .popup-map,
+  .mapleaflet,
+  .circle-map {
     direction: ltr;
   }
 }
-.uploader .btn--primary, .uploader .btn-group>.btn--primary {
+.uploader .btn--primary,
+.uploader .btn-group > .btn--primary {
   background-color: var(--primary-bg-color) !important;
   color: $white !important;
   border-color: var(--primary-bg-color) !important;
 }
-.file_input.text-center.form-control{
+.file_input.text-center.form-control {
   height: 75px;
 }
 .multi-select-styles {
-  .dropdown-content  label {
+  .dropdown-content label {
     padding-block: 5px !important;
   }
 }
@@ -1077,8 +1080,7 @@
 .switcher-backdrop {
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0, 0, 0, 0.25);
   position: fixed;
   z-index: 99999;
 }
-

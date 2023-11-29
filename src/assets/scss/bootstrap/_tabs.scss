@@ -1,4 +1,3 @@
-
 /* ######### Res-Tabs #########*/
 .tabs-style-1 .main-nav-line .nav-link {
   &.active::before {
@@ -17,46 +16,46 @@
 
     background: transparent;
     color: $primary;
-	 border-start-start-radius: 0;
-	 border-start-end-radius: 0;
+    border-start-start-radius: 0;
+    border-start-end-radius: 0;
   }
 
-     padding: 0.7rem 2rem;
+  padding: 0.7rem 2rem;
+  background: $gray-100;
+}
+.tabs-style-2 .main-nav-line {
+  .nav-link {
+    padding: 0.7rem 2rem;
     background: $gray-100;
+    border: 1px solid $border;
+    border-block-end: 0;
+    border-inline-end: 0;
+  }
+  &:first-child {
+    border-inline-start: 0;
+  }
 }
-.tabs-style-2 .main-nav-line{
-    .nav-link {
-	    padding: 0.7rem 2rem;
-	    background: $gray-100;
-	    border: 1px solid $border;
-	    border-block-end: 0;
-	    border-inline-end:0;
-     }
-    &:first-child{
-    	border-inline-start:0;
-    }
-}
-.tabs-style-2  li .nav-link.active {
-    background: none;
-    box-shadow: inset 0 3px 1px $primary;
-    color: $primary;
-	border-block-start: 0;
+.tabs-style-2 li .nav-link.active {
+  background: none;
+  box-shadow: inset 0 3px 1px $primary;
+  color: $primary;
+  border-block-start: 0;
 }
 .tabs-style-3 {
   padding: 20px;
   border: 1px solid #e3e3e3;
 
   .nav.panel-tabs li a {
-   padding: 10px 20px 10px 20px;
-   background: #ffffff;
-   border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    background: #ffffff;
+    border-radius: 5px;
     margin-block-start: 0px;
     margin-inline-end: 3px;
     margin-block-end: 3px;
     margin-inline-start: 0px;
-   text-align: center;
-   display: block;
-   color: #4a4a69;
+    text-align: center;
+    display: block;
+    color: #4a4a69;
     border: 1px solid $border;
   }
 
@@ -77,7 +76,7 @@
   }
 
   .tabs-menu-body {
-   padding: 20px;
+    padding: 20px;
     border: 1px solid #e3e7f3;
     border-radius: 4px;
   }
@@ -142,7 +141,7 @@
         inset-inline-end: 0;
         inset-inline-start: inherit;
         inset-block-start: 0;
-        content: "";
+        content: '';
         position: absolute;
         width: 5px;
         height: 100%;
@@ -158,7 +157,7 @@
           inset-block-start: 0;
           width: 5px;
           height: 100%;
-          content: "";
+          content: '';
         }
 
         &:before {
@@ -166,7 +165,7 @@
           inset-inline-end: inherit;
           position: absolute;
           inset-block-start: 0;
-          content: "";
+          content: '';
           width: 2px;
           height: 100%;
           background: $white;
@@ -223,7 +222,7 @@
       margin-inline-start: 0px;
 
       &.active:after {
-        content: "";
+        content: '';
         position: absolute;
         inset-block-end: -1px;
         height: 1px;
@@ -291,7 +290,7 @@
           position: absolute;
           inset-block-start: 0;
           inset-inline-start: 0;
-          content: "";
+          content: '';
           width: 5px;
           height: 100%;
         }
@@ -337,7 +336,7 @@
         &:after {
           inset-inline-start: 0;
           inset-block-start: 0;
-          content: "";
+          content: '';
           position: absolute;
           width: 5px;
           height: 100%;
@@ -358,7 +357,7 @@
             inset-inline-end: -1px;
             position: absolute;
             inset-block-start: 0;
-            content: "";
+            content: '';
             width: 2px;
             height: 100%;
             background: $white;
@@ -398,7 +397,7 @@
           inset-inline-end: 0;
           inset-inline-start: inherit;
           inset-block-start: 0;
-          content: "";
+          content: '';
           position: absolute;
           width: 5px;
           height: 100%;
@@ -414,7 +413,7 @@
             inset-block-start: 0;
             width: 5px;
             height: 100%;
-            content: "";
+            content: '';
           }
 
           &:before {
@@ -422,7 +421,7 @@
             inset-inline-end: inherit;
             position: absolute;
             inset-block-start: 0;
-            content: "";
+            content: '';
             width: 2px;
             height: 100%;
             background: $white;
@@ -481,7 +480,7 @@
       transform: translateY(-50%);
 
       &:after {
-        content: "";
+        content: '';
         width: 10px;
         display: inline-block;
         height: 10px;
@@ -517,7 +516,8 @@
       }
     }
 
-    &.left_side .content_wrapper, &.right_side .content_wrapper {
+    &.left_side .content_wrapper,
+    &.right_side .content_wrapper {
       width: 100%;
       border-block-start: 0;
     }
@@ -537,7 +537,7 @@
         margin-block-start: 15px;
 
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           inset-block-start: -6px;
           inset-inline-start: 50%;
@@ -564,7 +564,8 @@
       }
 
       > {
-        .tab_list, .content_wrapper > .accordian_header {
+        .tab_list,
+        .content_wrapper > .accordian_header {
           display: none;
         }
 
@@ -628,19 +629,26 @@
   }
 
   .tab_wrapper {
-    &.right_side .content_wrapper, &.left_side .content_wrapper, > ul li {
+    &.right_side .content_wrapper,
+    &.left_side .content_wrapper,
+    > ul li {
       border: 1px solid rgba(240, 242, 247, 0.12);
     }
 
-    &.right_side > ul li.active:before, &.left_side > ul li.active:before, &.right_side > ul li:after, &.left_side > ul li:after {
+    &.right_side > ul li.active:before,
+    &.left_side > ul li.active:before,
+    &.right_side > ul li:after,
+    &.left_side > ul li:after {
       background: $primary;
     }
 
-    &.right_side > ul li.active, &.left_side > ul li.active {
+    &.right_side > ul li.active,
+    &.left_side > ul li.active {
       border-color: rgba(240, 242, 247, 0.1);
     }
 
-    &.right_side > ul, &.left_side > ul {
+    &.right_side > ul,
+    &.left_side > ul {
       border-block-end: 1px solid rgba(240, 242, 247, 0.1);
     }
   }
@@ -682,7 +690,7 @@
       color: $gray-900;
       border: 1px solid;
       border-color: $border $border $white;
-    transition: none;
+      transition: none;
     }
 
     .nav-item {

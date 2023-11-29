@@ -1,6 +1,6 @@
 // See https://codepen.io/kevinweber/pen/dXWoRw
 @function escape-svg($string) {
-  @if str-index($string, "data:image/svg+xml") {
+  @if str-index($string, 'data:image/svg+xml') {
     @each $char, $encoded in $escaped-characters {
       $string: str-replace($string, $char, $encoded);
     }

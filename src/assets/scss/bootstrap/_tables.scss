@@ -4,12 +4,11 @@
   color: $gray-800;
 
   thead {
-
     th,
     td {
       font-weight: 600;
       font-size: 14px;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
       text-transform: capitalize;
       border-block-end-width: 1px;
       border-block-start-width: 0;
@@ -36,12 +35,11 @@
   }
 }
 
-.table-striped tbody tr:nth-of-type(4n+2) {
+.table-striped tbody tr:nth-of-type(4n + 2) {
   background-color: rgba(238, 238, 247, 0.5);
 }
 
 .table-bordered thead {
-
   th,
   td {
     border-block-start-width: 1px;
@@ -67,13 +65,12 @@
     vertical-align: bottom;
   }
 
-  tbody+tbody {
+  tbody + tbody {
     border-block-start: 2px solid transparent !important;
   }
 }
 
 .table-sm {
-
   th,
   td {
     padding: 0.3rem;
@@ -87,15 +84,13 @@
   td {
     border: 1px solid $gray-200;
   }
-
 }
 
 .table-borderless {
-
   th,
   td,
   thead th,
-  tbody+tbody {
+  tbody + tbody {
     border: 0;
   }
 }
@@ -113,7 +108,6 @@
   background-color: rgba(0, 0, 0, 0.075);
 
   > {
-
     th,
     td {
       background-color: rgba(0, 0, 0, 0.075);
@@ -125,7 +119,6 @@
   background-color: rgba(0, 0, 0, 0.075);
 
   > {
-
     td,
     th {
       background-color: rgba(0, 0, 0, 0.075);
@@ -178,7 +171,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 
-    >.table-bordered {
+    > .table-bordered {
       border: 0;
     }
   }
@@ -191,7 +184,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 
-    >.table-bordered {
+    > .table-bordered {
       border: 0;
     }
   }
@@ -204,7 +197,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 
-    >.table-bordered {
+    > .table-bordered {
       border: 0;
     }
   }
@@ -217,7 +210,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
 
-    >.table-bordered {
+    > .table-bordered {
       border: 0;
     }
   }
@@ -229,7 +222,7 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 
-  >.table-bordered {
+  > .table-bordered {
     border: 0;
   }
 }
@@ -240,15 +233,14 @@
 
     td,
     th {
-      background-color: $white  !important;
+      background-color: $white !important;
     }
   }
 
   .table-bordered {
-
     th,
     td {
-      border: 1px solid $border  !important;
+      border: 1px solid $border !important;
     }
   }
 
@@ -258,7 +250,7 @@
     th,
     td,
     thead th,
-    tbody+tbody {
+    tbody + tbody {
       border-color: $gray-300;
     }
   }
@@ -272,13 +264,13 @@
 .table.table-clean {
   td {
     .value {
-      font-size: .9rem;
+      font-size: 0.9rem;
       line-height: 1.6;
       font-weight: 500;
     }
 
     .sub-value {
-      font-size: .72rem;
+      font-size: 0.72rem;
       color: $gray-600;
     }
   }
@@ -308,15 +300,15 @@
   }
 }
 
-.table>:not(:last-child)>:last-child>* {
+.table > :not(:last-child) > :last-child > * {
   border-block-end-color: $border;
 }
 
-.table-bordered>:not(caption)>* {
+.table-bordered > :not(caption) > * {
   border-width: 0;
 }
 
-.table-striped>tbody>tr:nth-of-type(odd) {
+.table-striped > tbody > tr:nth-of-type(odd) {
   --bs-table-accent-bg: rgb(255, 255, 255);
   color: $dark;
 }
@@ -332,11 +324,10 @@ tr {
   border-width: 0;
 }
 
-.table-hover>tbody>tr:hover {
+.table-hover > tbody > tr:hover {
   --bs-table-accent-bg: none !important;
   background: $bg-hover;
 }
-
 
 @media (min-width: 768px) {
   .table-responsive.deleted-table .data-table-btn {
@@ -354,17 +345,16 @@ tr {
   }
 }
 
-.table> :not(:first-child) {
-  border-block-start: 1px solid $border  !important;
+.table > :not(:first-child) {
+  border-block-start: 1px solid $border !important;
 }
 
-.table-striped>tbody>tr:nth-of-type(odd)>* {
-  --bs-table-accent-bg: $white  !important;
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: $white !important;
 }
 
 @media (max-width: 583px) {
   .dt-buttons {
-
     .btn,
     .sp-container button {
       padding: 0.5rem 0.1rem;
@@ -372,35 +362,34 @@ tr {
   }
 }
 
-.table>:not(caption)>*>* {
+.table > :not(caption) > * > * {
   background-color: transparent;
 }
 
 .table-primary {
-  background-color: $primary-03  !important;
+  background-color: $primary-03 !important;
 
   > {
-
     th,
     td {
-      background-color: $primary-03  !important;
+      background-color: $primary-03 !important;
     }
   }
 
   th,
   td,
   thead th,
-  tbody+tbody {
+  tbody + tbody {
     border-color: #27a59238 !important;
   }
 
-  &.table> :not(:first-child) {
-    border-block-start: 1px solid $primary-01  !important;
+  &.table > :not(:first-child) {
+    border-block-start: 1px solid $primary-01 !important;
   }
 
   thead th {
-    background: $primary  !important;
-    color: $white  !important;
+    background: $primary !important;
+    color: $white !important;
   }
 
   tbody tr {
@@ -409,13 +398,12 @@ tr {
 }
 
 .table-hover .table-primary:hover {
-  background-color: $primary-03  !important;
+  background-color: $primary-03 !important;
 
   > {
-
     td,
     th {
-      background-color: $primary-03  !important;
+      background-color: $primary-03 !important;
     }
   }
 }
@@ -424,7 +412,6 @@ tr {
   background-color: rgb(247, 79, 117, 0.3) !important;
 
   > {
-
     th,
     td {
       background-color: rgb(247, 79, 117, 0.3) !important;
@@ -434,17 +421,17 @@ tr {
   th,
   td,
   thead th,
-  tbody+tbody {
+  tbody + tbody {
     border-color: #ff00391c !important;
   }
 
-  &.table> :not(:first-child) {
+  &.table > :not(:first-child) {
     border-block-start: 1px solid rgb(247, 79, 117, 0.1) !important;
   }
 
   thead th {
-    background: $secondary  !important;
-    color: $white  !important;
+    background: $secondary !important;
+    color: $white !important;
   }
 
   tbody tr {
@@ -456,7 +443,6 @@ tr {
   background-color: rgb(247, 79, 117, 0.3) !important;
 
   > {
-
     td,
     th {
       background-color: rgb(247, 79, 117, 0.3) !important;
@@ -468,7 +454,6 @@ tr {
   background-color: rgb(255, 189, 90, 0.3) !important;
 
   > {
-
     th,
     td {
       background-color: rgb(255, 189, 90, 0.3) !important;
@@ -478,17 +463,17 @@ tr {
   th,
   td,
   thead th,
-  tbody+tbody {
+  tbody + tbody {
     border-color: #ff990030 !important;
   }
 
-  &.table> :not(:first-child) {
+  &.table > :not(:first-child) {
     border-block-start: 1px solid rgb(255, 189, 90, 0.1) !important;
   }
 
   thead th {
-    background: $warning  !important;
-    color: $white  !important;
+    background: $warning !important;
+    color: $white !important;
   }
 
   tbody tr {
@@ -500,7 +485,6 @@ tr {
   background-color: rgb(255, 189, 90, 0.3) !important;
 
   > {
-
     td,
     th {
       background-color: rgb(255, 189, 90, 0.3) !important;
@@ -512,7 +496,6 @@ tr {
   background-color: rgb(78, 194, 240, 0.3) !important;
 
   > {
-
     th,
     td {
       background-color: rgb(78, 194, 240, 0.3) !important;
@@ -522,17 +505,17 @@ tr {
   th,
   td,
   thead th,
-  tbody+tbody {
+  tbody + tbody {
     border-color: #00b7ff38 !important;
   }
 
-  &.table> :not(:first-child) {
+  &.table > :not(:first-child) {
     border-block-start: 1px solid rgb(78, 194, 240, 0.1) !important;
   }
 
   thead th {
-    background: $info  !important;
-    color: $white  !important;
+    background: $info !important;
+    color: $white !important;
   }
 
   tbody tr {
@@ -544,7 +527,6 @@ tr {
   background-color: rgb(78, 194, 240, 0.3);
 
   > {
-
     td,
     th {
       background-color: rgb(78, 194, 240, 0.3);
@@ -556,7 +538,6 @@ tr {
   background-color: rgb(36, 213, 184, 0.3) !important;
 
   > {
-
     th,
     td {
       background-color: rgb(36, 213, 184, 0.3) !important;
@@ -566,30 +547,28 @@ tr {
   th,
   td,
   thead th,
-  tbody+tbody {
+  tbody + tbody {
     border-color: #00ffd580 !important;
   }
 
-  &.table> :not(:first-child) {
+  &.table > :not(:first-child) {
     border-block-start: 1px solid rgb(36, 213, 184, 0.1) !important;
   }
 
   thead th {
-    background: $success  !important;
-    color: $white  !important;
+    background: $success !important;
+    color: $white !important;
   }
 
   tbody tr {
     background-color: transparent !important;
   }
-
 }
 
 .table-hover .table-success:hover {
   background-color: rgb(36, 213, 184, 0.3) !important;
 
   > {
-
     td,
     th {
       background-color: rgb(36, 213, 184, 0.3) !important;
@@ -601,7 +580,6 @@ tr {
   background-color: rgb(243, 67, 67, 0.3) !important;
 
   > {
-
     th,
     td {
       background-color: rgb(243, 67, 67, 0.3) !important;
@@ -611,37 +589,31 @@ tr {
   th,
   td,
   thead th,
-  tbody+tbody {
+  tbody + tbody {
     border-color: #ff00001c !important;
   }
 
-  &.table> :not(:first-child) {
+  &.table > :not(:first-child) {
     border-block-start: 1px solid rgb(243, 67, 67, 0.1) !important;
   }
 
   thead th {
-    background: $danger  !important;
-    color: $white  !important;
+    background: $danger !important;
+    color: $white !important;
   }
 
   tbody tr {
     background-color: transparent !important;
   }
-
 }
 
 .table-hover .table-danger:hover {
   background-color: rgb(243, 67, 67, 0.3) !important;
 
   > {
-
     td,
     th {
       background-color: rgb(243, 67, 67, 0.3) !important;
     }
   }
 }
-
-
-
-

@@ -17,8 +17,12 @@
 .ps__rail-x {
   display: none;
   opacity: 0;
-  transition: background-color 0.2s linear, opacity 0.2s linear;
-  -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
+  transition:
+    background-color 0.2s linear,
+    opacity 0.2s linear;
+  -webkit-transition:
+    background-color 0.2s linear,
+    opacity 0.2s linear;
   height: 2px;
 
   /* there must be 'bottom' or 'top' for ps__rail-x */
@@ -31,8 +35,12 @@
 .ps__rail-y {
   display: none;
   opacity: 1;
-  transition: background-color 0.2s linear, opacity 0.2s linear;
-  -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
+  transition:
+    background-color 0.2s linear,
+    opacity 0.2s linear;
+  -webkit-transition:
+    background-color 0.2s linear,
+    opacity 0.2s linear;
   width: 5px;
 
   /* there must be 'right' or 'left' for ps__rail-y */
@@ -86,8 +94,12 @@
 .ps__thumb-x {
   background-color: rgba(170, 170, 170, 0.1);
   border-radius: 6px;
-  transition: background-color 0.2s linear, height 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s linear, height 0.2s ease-in-out;
+  transition:
+    background-color 0.2s linear,
+    height 0.2s ease-in-out;
+  -webkit-transition:
+    background-color 0.2s linear,
+    height 0.2s ease-in-out;
   height: 6px;
 
   /* there must be 'bottom' for ps__thumb-x */
@@ -100,8 +112,12 @@
 .ps__thumb-y {
   background-color: rgb(234, 233, 241);
   border-radius: 6px;
-  transition: background-color 0.2s linear, width 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s linear, width 0.2s ease-in-out;
+  transition:
+    background-color 0.2s linear,
+    width 0.2s ease-in-out;
+  -webkit-transition:
+    background-color 0.2s linear,
+    width 0.2s ease-in-out;
   width: 5px;
 
   /* there must be 'right' for ps__thumb-y */

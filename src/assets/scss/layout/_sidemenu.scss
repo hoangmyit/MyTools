@@ -248,9 +248,15 @@
 }
 
 .main-sidemenu .side-menu {
-  -webkit-transition: left 320ms ease, width 320ms ease;
-  -o-transition: left 320ms ease, width 320ms ease;
-  transition: left 320ms ease, width 320ms ease;
+  -webkit-transition:
+    left 320ms ease,
+    width 320ms ease;
+  -o-transition:
+    left 320ms ease,
+    width 320ms ease;
+  transition:
+    left 320ms ease,
+    width 320ms ease;
 }
 
 .sidebar-mini .app-sidebar {
@@ -270,9 +276,15 @@
   -webkit-box-shadow: 0px 8px 14.72px 1.28px rgba(154, 154, 204, 0.1);
   box-shadow: 0px 8px 14.72px 1.28px rgba(154, 154, 204, 0.1);
   border-inline-end: 1px solid $border;
-  -webkit-transition: left 320ms ease, width 320ms ease;
-  -o-transition: left 320ms ease, width 320ms ease;
-  transition: left 320ms ease, width 320ms ease;
+  -webkit-transition:
+    left 320ms ease,
+    width 320ms ease;
+  -o-transition:
+    left 320ms ease,
+    width 320ms ease;
+  transition:
+    left 320ms ease,
+    width 320ms ease;
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -439,8 +451,8 @@
   }
 
   .sub-side-menu__item:before {
-    content: "\f22d";
-    font-family: "Font Awesome 5 Free";
+    content: '\f22d';
+    font-family: 'Font Awesome 5 Free';
     position: absolute;
     inset-block-start: 10px;
     inset-inline-start: 15px;
@@ -451,8 +463,8 @@
 }
 
 .sub-slide-menu1 .sub-slide-item2:before {
-  content: "\f22d";
-  font-family: "Font Awesome 5 Free";
+  content: '\f22d';
+  font-family: 'Font Awesome 5 Free';
   position: absolute;
   inset-inline-start: 35px !important;
   font-size: 9px;
@@ -498,7 +510,7 @@
 }
 
 .app-sidebar .slide .side-menu__item.active::before {
-  content: "";
+  content: '';
   width: 2px;
   height: 42px;
   background: #f2f7ff;
@@ -515,10 +527,10 @@
   letter-spacing: 0.5px;
   margin-block-end: 12px;
   height: 15px;
-    padding-block-start: 0px;
-    padding-inline-end: 20px;
-    padding-block-end: 0px;
-    padding-inline-start: 25px;
+  padding-block-start: 0px;
+  padding-inline-end: 20px;
+  padding-block-end: 0px;
+  padding-inline-start: 25px;
   opacity: 0.6;
   white-space: nowrap;
 }
@@ -545,10 +557,10 @@
   -ms-flex-align: center;
   align-items: center;
   font-size: 13px;
-    padding-block-start: 8px;
-    padding-inline-end: 35px;
-    padding-block-end: 8px;
-    padding-inline-start: 35px;
+  padding-block-start: 8px;
+  padding-inline-end: 35px;
+  padding-block-end: 8px;
+  padding-inline-start: 35px;
   font-weight: 400;
   color: #7b8191;
 
@@ -565,7 +577,9 @@
   transition: -webkit-transform 320ms ease;
   -o-transition: transform 320ms ease;
   transition: transform 320ms ease;
-  transition: transform 320ms ease, -webkit-transform 320ms ease;
+  transition:
+    transform 320ms ease,
+    -webkit-transform 320ms ease;
 }
 
 @media (max-width: 848px) {
@@ -783,10 +797,10 @@
   font-weight: 400;
   letter-spacing: 1px;
   opacity: 1;
-    padding-block-start: 20px;
-    padding-inline-end: 34px;
-    padding-block-end: 10px;
-    padding-inline-start: 34px;
+  padding-block-start: 20px;
+  padding-inline-end: 34px;
+  padding-block-end: 10px;
+  padding-inline-start: 34px;
   text-transform: capitalize;
   width: 100%;
   position: relative;
@@ -796,7 +810,7 @@
   position: relative;
 
   &:after {
-    content: "--";
+    content: '--';
     position: absolute;
     inset-inline-start: 21px;
     inset-block-start: 20px;
@@ -870,10 +884,10 @@
   align-items: center;
   position: relative;
   list-style: none;
-    padding-block-start: 8px !important;
-    padding-inline-end: 0px !important;
-    padding-block-end: 8px !important;
-    padding-inline-start: 25px !important;
+  padding-block-start: 8px !important;
+  padding-inline-end: 0px !important;
+  padding-block-end: 8px !important;
+  padding-inline-start: 25px !important;
 }
 
 .sub-slide-menu {
@@ -907,10 +921,10 @@
 }
 
 .sub-slide-menu1 .sub-slide-item2 {
-    padding-block-start: 6px !important;
-    padding-inline-end: 0px !important;
-    padding-block-end: 6px !important;
-    padding-inline-start: 48px !important;
+  padding-block-start: 6px !important;
+  padding-inline-end: 0px !important;
+  padding-block-end: 6px !important;
+  padding-inline-start: 48px !important;
   display: block;
   font-size: 11px;
 }
@@ -938,8 +952,8 @@
 }
 
 .app-sidebar .slide-menu .slide-item:before {
-  content: "\f22d";
-  font-family: "Font Awesome 5 Free";
+  content: '\f22d';
+  font-family: 'Font Awesome 5 Free';
   position: absolute;
   inset-block-start: 9px;
   inset-inline-start: 20px;
@@ -1127,9 +1141,15 @@
   inset-block-start: 0;
   inset-inline-start: 0;
   inset-inline-end: 0;
-  -webkit-transition: left 320ms ease, width 320ms ease;
-  -o-transition: left 320ms ease, width 320ms ease;
-  transition: left 320ms ease, width 320ms ease;
+  -webkit-transition:
+    left 320ms ease,
+    width 320ms ease;
+  -o-transition:
+    left 320ms ease,
+    width 320ms ease;
+  transition:
+    left 320ms ease,
+    width 320ms ease;
   outline: none;
 }
 
@@ -1274,10 +1294,10 @@
     }
 
     .slide-item {
-    padding-block-start: 8px;
-    padding-inline-end: 18px;
-    padding-block-end: 8px;
-    padding-inline-start: 35px;
+      padding-block-start: 8px;
+      padding-inline-end: 18px;
+      padding-block-end: 8px;
+      padding-inline-start: 35px;
     }
 
     .slide-menu {
@@ -1481,8 +1501,8 @@
   }
 
   .sub-slide-menu .sub-side-menu__item:before {
-    content: "\f22d";
-    font-family: "Font Awesome 5 Free";
+    content: '\f22d';
+    font-family: 'Font Awesome 5 Free';
     position: absolute;
     inset-inline-start: 25px !important;
     font-size: 9px;
@@ -1733,8 +1753,10 @@
       position: fixed;
       z-index: 1;
     }
-    .rtl.light-menu.app.sidenav-toggled.sidenav-toggled-open.light-menu  {
-      .desktop-dark, .desktop-logo, .mobile-dark {
+    .rtl.light-menu.app.sidenav-toggled.sidenav-toggled-open.light-menu {
+      .desktop-dark,
+      .desktop-logo,
+      .mobile-dark {
         display: none !important;
       }
       .mobile-logo {
@@ -1744,8 +1766,8 @@
   }
 
   .sub-slide-menu .sub-side-menu__item:before {
-    content: "\f22d";
-    font-family: "Font Awesome 5 Free";
+    content: '\f22d';
+    font-family: 'Font Awesome 5 Free';
     position: absolute;
     inset-inline-start: 25px !important;
     font-size: 9px;

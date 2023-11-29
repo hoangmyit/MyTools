@@ -51,7 +51,7 @@
   margin-inline-start: -10px;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     inset-block-end: -1px;
     inset-inline-start: 0;
@@ -80,7 +80,7 @@
     border-block-start-color: $gray-200;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       inset-block-start: -1px;
       inset-inline-start: 0px;
@@ -338,7 +338,7 @@
       margin-block-start: 30px;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         inset-block-start: -15px;
         inset-inline-start: -19px;
@@ -446,7 +446,7 @@
 }
 
 .main-contact-item .main-img-user::after {
-  content: "";
+  content: '';
   position: absolute;
   inset-block-end: 0;
   inset-inline-end: 0;

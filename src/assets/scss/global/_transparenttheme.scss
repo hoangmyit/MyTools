@@ -28,11 +28,9 @@
   }
 
   .Select2__menu {
-
     div,
     li,
     .Select2__single-value {
-
       &.active,
       .Select2__option--is-selected {
         background: $primary-dark !important;
@@ -494,7 +492,7 @@
     background-color: var(--transparent-body) !important;
     border: 0px solid rgba(255, 255, 255, 0.2) !important;
   }
-  .file_input.text-center.form-control{
+  .file_input.text-center.form-control {
     background-color: var(--transparent-body) !important;
   }
 
@@ -507,7 +505,7 @@
   }
   .main-header-center.form-group .form-control:focus {
     border-color: rgba(255, 255, 255, 0.2) !important;
-}
+  }
 }
 
 /* ###### globalTransparenttheme  ###### */

@@ -31,7 +31,7 @@
 
 .alert-primary {
   color: $primary;
-   background-color: $primary-02;
+  background-color: $primary-02;
   border-color: $primary-02;
 
   hr {
@@ -45,8 +45,8 @@
 
 .alert-secondary {
   color: $secondary;
-  background-color: rgba(247, 79, 117, .2);
-  border-color: rgba(247, 79, 117, .2);
+  background-color: rgba(247, 79, 117, 0.2);
+  border-color: rgba(247, 79, 117, 0.2);
 
   hr {
     border-block-start-color: $secondary;
@@ -59,8 +59,8 @@
 
 .alert-success {
   color: #1a9c86;
-    background-color: rgba(26, 156, 134, .2);
-    border-color: rgba(26, 156, 134, .2);
+  background-color: rgba(26, 156, 134, 0.2);
+  border-color: rgba(26, 156, 134, 0.2);
 
   hr {
     border-block-start-color: $success;
@@ -73,8 +73,8 @@
 
 .alert-info {
   color: #4ec2f0;
-  background-color:rgba($info, .2);
-  border-color:rgba($info, .2);
+  background-color: rgba($info, 0.2);
+  border-color: rgba($info, 0.2);
 
   hr {
     border-block-start-color: $info;
@@ -86,9 +86,9 @@
 }
 
 .alert-warning {
-   color: #ffbd5a;
-    background-color: rgba(255, 189, 90, .2);
-    border-color: rgba(255, 189, 90, .2);
+  color: #ffbd5a;
+  background-color: rgba(255, 189, 90, 0.2);
+  border-color: rgba(255, 189, 90, 0.2);
 
   hr {
     border-block-start-color: $warning;
@@ -101,8 +101,8 @@
 
 .alert-danger {
   color: $danger;
-  background-color: rgba(243, 67, 67, .2);
-  border-color: rgba(243, 67, 67, .2);
+  background-color: rgba(243, 67, 67, 0.2);
+  border-color: rgba(243, 67, 67, 0.2);
 
   hr {
     border-block-start-color: $danger;
@@ -151,7 +151,7 @@
   }
 
   .alert-link {
-     color: #666667;
+    color: #666667;
   }
 }
 
@@ -164,7 +164,7 @@
 
   .close {
     text-shadow: none;
-    opacity: .5;
+    opacity: 0.5;
   }
 
   strong {
@@ -172,7 +172,7 @@
   }
 }
 
-[class*=alert-outline-] {
+[class*='alert-outline-'] {
   border: 1px solid transparent;
 }
 
@@ -187,16 +187,16 @@
 }
 
 .alert-outline-warning {
-    border-color: #ffbd5a;
-    color: $warning;
+  border-color: #ffbd5a;
+  color: $warning;
 }
 
 .alert-outline-danger {
   border-color: #f34343;
-    color: $danger;
+  color: $danger;
 }
 
-[class*=alert-solid-] {
+[class*='alert-solid-'] {
   border-width: 0;
   color: $white;
 }
