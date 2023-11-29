@@ -13,6 +13,7 @@ export default defineConfig({
     coverage: {
       reporter: ['html', 'lcov'],
     },
+    include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)']
   },
-  plugins: [react() as any]
+  plugins: [react() as any, tsconfigPaths() as any],
 });
