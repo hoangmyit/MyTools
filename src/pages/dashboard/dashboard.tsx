@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row, Card } from 'react-bootstrap';
-import { imagesData } from '../../../common/commonimages';
-import Pageheader from '../../../layout/layoutcomponent/pageheader';
+import { imagesData } from '../../common/commonimages';
+import Pageheader from '../../layout/common/pageheader';
 import { Link } from 'react-router-dom';
 
 export default function Dashboard() {

@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from './layoutcomponent/header';
-import Sidebar from './layoutcomponent/sidebar';
-import Footer from './layoutcomponent/footer';
-import Switcher from './layoutcomponent/switcher';
-import RightSidebar from './layoutcomponent/rightsidebar';
-import TabToTop from './layoutcomponent/tabtotop';
+import Header from './common/header';
+import Sidebar from './common/sidebar';
+import Footer from './common/footer';
+import Switcher from './common/switcher';
+import RightSidebar from './common/rightsidebar';
+import TabToTop from './common/tabtotop';
 export default function App() {
   //The created store
   document.querySelector('body')?.classList.add('ltr', 'main-body', 'app', 'sidebar-mini');

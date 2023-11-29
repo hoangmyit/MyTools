@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.scss';
-import Loader from './layout/layoutcomponent/loaders';
+import Loader from './layout/common/loaders';
 const App = React.lazy(() => import('./layout/App'));
-const Dashboard = React.lazy(() => import('./components/dashboard/dashboard1/dashboard'));
+const Dashboard = React.lazy(() => import('./pages/dashboard/dashboard'));
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
