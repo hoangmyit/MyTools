@@ -1,13 +1,13 @@
 import React from 'react';
 import { Col, Row, Card } from 'react-bootstrap';
 import { imagesData } from '../../common/commonimages';
-import Pageheader from '../../layout/common/pageheader';
+import PageHeader from '../../layout/common/page-header/page-header';
 import { Link } from 'react-router-dom';
 
 export default function Dashboard() {
   return (
     <React.Fragment>
-      <Pageheader title="DASHBOARD" heading="Dashboard" active="Sales" />
+      <PageHeader title="dashboard" heading="Dashboard" active="Sales" />
       <Row>
         <Col xxl={5} xl={12} lg={12} md={12} sm={12}>
           <Row>

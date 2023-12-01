@@ -1,8 +1,9 @@
 import { Fragment, useState, useEffect } from 'react';
-import { MENUITEMS } from '../../common/sidemenu';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { NavLink, useLocation } from 'react-router-dom';
-import { imagesData } from '../../common/commonimages';
+import { imagesData } from '../../../common/commonimages';
+import { MENUITEMS } from './side-menu-const';
+import { MenuTypeDef } from '../../../models/routing-model/routing-model';
 const history: any = [];
 
 const Sidebar = () => {
@@ -42,8 +43,8 @@ const Sidebar = () => {
   //<-------End---->
   function clearMenuActive() {
     MENUITEMS.map((mainlevel: any) => {
-      if (mainlevel.Items) {
-        mainlevel.Items.map((sublevel: any) => {
+      if (mainlevel.items) {
+        mainlevel.items.map((sublevel: any) => {
           sublevel.active = false;
           if (sublevel.children) {
             sublevel.children.map((sublevel1: any) => {
@@ -73,8 +74,8 @@ const Sidebar = () => {
   function setSidemenu() {
     if (menuitems) {
       menuitems.map((mainlevel: any) => {
-        if (mainlevel.Items) {
-          mainlevel.Items.map((items: any) => {
+        if (mainlevel.item) {
+          mainlevel.items.map((items: any) => {
             items.active = false;
             items.selected = false;
             if (location.pathname === '/nowa/preview/' || location.pathname === '/nowa/preview/') {
@@ -125,8 +126,8 @@ const Sidebar = () => {
       // To show/hide the menu
       if (!item.active) {
         menuitems.map((mainlevel: any) => {
-          if (mainlevel.Items) {
-            mainlevel.Items.map((sublevel: any) => {
+          if (mainlevel.items) {
+            mainlevel.items.map((sublevel: any) => {
               sublevel.active = false;
               if (item === sublevel) {
                 sublevel.active = true;
@@ -217,15 +218,15 @@ const Sidebar = () => {
               <ul className="side-menu">
                 {menuitems.map((Item: any, itemi: any) => (
                   <Fragment key={itemi + Math.random() * 100}>
-                    <li className="side-item side-item-category">{Item.menutitle}</li>
-                    {Item.Items.map((menuItem: any, i: any) => (
+                    <li className="side-item side-item-category">{Item.title}</li>
+                    {Item.items.map((menuItem: any, i: any) => (
                       <li
                         className={`slide ${menuItem.selected ? 'is-expanded' : ''}  ${
                           menuItem.active ? 'is-expanded' : ''
                         }`}
                         key={i}
                       >
-                        {menuItem.type === 'link' ? (
+                        {menuItem.type === MenuTypeDef.link ? (
                           <NavLink
                             to={menuItem.path + '/'}
                             className={`side-menu__item ${menuItem.selected ? ' active' : ''}`}
@@ -237,7 +238,7 @@ const Sidebar = () => {
                         ) : (
                           ''
                         )}
-                        {menuItem.type === 'sub' ? (
+                        {menuItem.type === MenuTypeDef.sub ? (
                           <a
                             href="javascript"
                             onClick={(event) => {
@@ -275,7 +276,7 @@ const Sidebar = () => {
                                     childrenItem.active ? 'is-expanded' : ''
                                   }`}
                                 >
-                                  {childrenItem.type === 'sub' ? (
+                                  {childrenItem.type === MenuTypeDef.sub ? (
                                     <a
                                       href="javascript"
                                       className={`slide-item ${childrenItem.selected ? ' is-expanded' : ''}`}
@@ -294,7 +295,7 @@ const Sidebar = () => {
                                   ) : (
                                     ''
                                   )}
-                                  {childrenItem.type === 'link' ? (
+                                  {childrenItem.type === MenuTypeDef.link ? (
                                     <span>
                                       <NavLink to={childrenItem.path + '/'} className="slide-item">
                                         {childrenItem.title}
@@ -311,14 +312,14 @@ const Sidebar = () => {
                                     >
                                       {childrenItem.children.map((childrenSubItem: any, key: any) => (
                                         <li key={key}>
-                                          {childrenSubItem.type === 'link' ? (
+                                          {childrenSubItem.type === MenuTypeDef.link ? (
                                             <NavLink to={childrenSubItem.path + '/'} className="sub-side-menu__item">
                                               <span className="sub-side-menu__label">{childrenSubItem.title}</span>
                                             </NavLink>
                                           ) : (
                                             ''
                                           )}
-                                          {childrenSubItem.type === 'sub' ? (
+                                          {childrenSubItem.type === MenuTypeDef.sub ? (
                                             <span
                                               className={`sub-slide2 ${childrenSubItem.selected ? 'is-expanded' : ''} ${
                                                 childrenSubItem.active ? 'is-expanded' : ''
@@ -338,23 +339,23 @@ const Sidebar = () => {
                                                 </span>
                                                 <i className="sub-angle2 fe fe-chevron-down"></i>
                                               </NavLink>
-                                              {childrenItem.children.map((childrenSubItemsub: any, key: any) => (
+                                              {childrenItem.children.map((childrenSubitemsub: any, key: any) => (
                                                 <ul
                                                   key={key}
                                                   className={`sub-slide-menu1 ${
-                                                    childrenSubItemsub.selected ? 'open' : ''
+                                                    childrenSubitemsub.selected ? 'open' : ''
                                                   }`}
                                                   style={
-                                                    childrenSubItemsub.active
+                                                    childrenSubitemsub.active
                                                       ? { display: 'block' }
                                                       : { display: 'none' }
                                                   }
                                                 >
-                                                  {childrenItem.children.map((childrenSubItemsubs: any, key: any) => (
+                                                  {childrenItem.children.map((childrenSubitemsubs: any, key: any) => (
                                                     <li key={key}>
                                                       <NavLink className="sub-slide-item2" to="#">
-                                                        {childrenSubItemsubs.title}
-                                                        {childrenSubItemsubs.active}
+                                                        {childrenSubitemsubs.title}
+                                                        {childrenSubitemsubs.active}
                                                       </NavLink>
                                                     </li>
                                                   ))}
