@@ -49,7 +49,6 @@ const VideoRepetition: FunctionComponent<VideoRepetitionProp> = ({ title }) => {
                 height={videoHeight}
                 ref={videoElm}
                 src={videoFilePath}
-                startTime={seekTime}
                 // onDurationChange={(e: any) => {
                 //   const duration = (e.target as HTMLVideoElement).duration;
                 //   setVideoProps(
