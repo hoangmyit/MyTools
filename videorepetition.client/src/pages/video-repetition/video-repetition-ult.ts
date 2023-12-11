@@ -1,16 +1,15 @@
 import { secondToMinute } from '../../utility/time-utility';
 import { RepetitionMark } from './video-repetition-model';
-import { identity, map, times } from 'ramda';
 
-export const getVideoLengthMark = (step: number): RepetitionMark[] => {
-  return map(
-    (x: number) => {
-      const val = x * step;
-      return {
-        value: val,
-        label: secondToMinute(val),
-      };
-    },
-    times(identity, 100)
-  );
+export const getVideoLengthMark = (step: number, duration: number): RepetitionMark[] => {
+  const marks: RepetitionMark[] = [];
+  let value = 0;
+  while(value <= duration) {
+    marks.push({
+      value: value,
+      label: secondToMinute(value),
+    });
+    value += step;
+  }
+  return marks;
 };
