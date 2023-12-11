@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './index.scss';
 import Loader from './layout/common/loaders';
 import VideoRepetition from './pages/video-repetition/video-repetition';
@@ -10,7 +10,7 @@ const Dashboard = React.lazy(() => import('./pages/dashboard/dashboard'));
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.Fragment>
-    <BrowserRouter>
+    <HashRouter>
       <React.Suspense fallback={<Loader />}>
         <Routes>
           <Route path={`${import.meta.env.BASE_URL}`} element={<App />}>
@@ -22,6 +22,6 @@ root.render(
           <Route></Route>
         </Routes>
       </React.Suspense>
-    </BrowserRouter>
+    </HashRouter>
   </React.Fragment>
 );

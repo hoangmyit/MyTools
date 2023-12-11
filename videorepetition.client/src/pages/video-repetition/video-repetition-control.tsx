@@ -35,7 +35,9 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
     if (currentRepetition.currentLoop <= 0) {
       newRepetition.value += currentRepetition.step;
       newRepetition.currentLoop = currentRepetition.numOfLoop;
+      setTimeout(() => playVideo(elm, newRepetition), waitingTime);
     } else {
+      elm.seek(currentRepetition.value);
       elm.play();
       setTimeout(
         () => {
