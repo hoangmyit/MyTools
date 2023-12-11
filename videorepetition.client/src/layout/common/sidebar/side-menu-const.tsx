@@ -5,11 +5,35 @@ import { MainMenuDef, MenuTypeDef } from '../../../models/routing-model/routing-
 
 export const MENUITEMS: MainMenuDef[] = [
   {
+    title: 'Repetition',
+    items: [
+      {
+        title: 'video',
+        icon: <VideoLoopIcon className="side-menu__icon" />,
+        type: MenuTypeDef.link,
+        selected: false,
+        active: false,
+        path: `${import.meta.env.BASE_URL}repetition/video`,
+      },
+      {
+        title: 'audio',
+        icon: <VideoLoopIcon className="side-menu__icon" />,
+        type: MenuTypeDef.link,
+        selected: false,
+        active: false,
+        path: `${import.meta.env.BASE_URL}repetition/audio`,
+      },
+    ],
+  },
+];
+
+const exp: MainMenuDef[] = [
+  {
     title: 'Main',
     items: [
       {
         title: 'Dashboards',
-        icon: <HomeIcon className='side-menu__icon'/>,
+        icon: <HomeIcon className="side-menu__icon" />,
         path: null,
         type: MenuTypeDef.sub,
         selected: false,
@@ -32,7 +56,7 @@ export const MENUITEMS: MainMenuDef[] = [
     items: [
       {
         title: 'Menu-levels',
-        icon: <MenuListIcon className='side-menu__icon'/>,
+        icon: <MenuListIcon className="side-menu__icon" />,
         type: MenuTypeDef.sub,
         selected: false,
         active: false,
@@ -76,25 +100,6 @@ export const MENUITEMS: MainMenuDef[] = [
       },
     ],
   },
-  {
-    title: 'Repetition',
-    items: [
-      {
-        title: 'video',
-        icon: <VideoLoopIcon className='side-menu__icon'/>,
-        type: MenuTypeDef.link,
-        selected: false,
-        active: false,
-        path: `${import.meta.env.BASE_URL}repetition/video`,
-      },
-      {
-        title: 'audio',
-        icon: <VideoLoopIcon className='side-menu__icon'/>,
-        type: MenuTypeDef.link,
-        selected: false,
-        active: false,
-        path: `${import.meta.env.BASE_URL}repetition/audio`,
-      }
-    ]
-  }
 ];
+
+console.log(exp);

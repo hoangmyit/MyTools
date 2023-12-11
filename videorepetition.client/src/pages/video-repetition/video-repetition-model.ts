@@ -5,13 +5,13 @@ export type VideoRepetitionProp = {
 };
 
 export type RepetitionVideoDef = {
-  min: number,
-  max: number,
   value: number,
   step: number,
   numOfLoop: number,
   waitingTime: number,
   currentLoop: number,
+  autoNext: boolean,
+  duration: number,
 };
 
 export type RepetitionMark = {

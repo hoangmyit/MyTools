@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from 'react';
 import { RepetitionVideoControlProp, RepetitionVideoDef } from './video-repetition-model';
-import { Button, Col, Form, Row } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
 import { PlayerReference } from 'video-react';
 import { FilePond } from 'react-filepond';
 import { Box, Slider } from '@mui/material';
@@ -16,26 +16,26 @@ const setRepetitionData = (repetition: RepetitionVideoDef, updateData: any): Rep
 
 const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({ videoElm, handleVideoPath }) => {
   const [repetitionProps, setVideoProps] = useState<RepetitionVideoDef>({
-    min: 0,
-    max: 100,
     numOfLoop: 3,
-    step: 5,
+    step: 30,
     value: 0,
     waitingTime: 7,
     currentLoop: 2,
+    autoNext: true,
+    duration: 0,
   });
 
-  const { min, max, numOfLoop, step, value, waitingTime, currentLoop } = repetitionProps;
+  const { numOfLoop, step, value, waitingTime, currentLoop, duration, autoNext } = repetitionProps;
 
   const playVideo = (elm: PlayerReference, currentRepetition: RepetitionVideoDef) => {
-    if (currentRepetition.value > currentRepetition.max) return;
+    if (currentRepetition.value > currentRepetition.duration) return;
     const newRepetition = setRepetitionData(currentRepetition, {
       currentLoop: currentRepetition.currentLoop - 1,
     });
     if (currentRepetition.currentLoop <= 0) {
       newRepetition.value += currentRepetition.step;
       newRepetition.currentLoop = currentRepetition.numOfLoop;
-      setTimeout(() => playVideo(elm, newRepetition), waitingTime);
+      currentRepetition.autoNext && setTimeout(() => playVideo(elm, newRepetition), waitingTime);
     } else {
       elm.seek(currentRepetition.value);
       elm.play();
@@ -52,6 +52,19 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
     setVideoProps(newRepetition);
   };
 
+  const handlePathChange = (file: Blob) => {
+    handleVideoPath(URL.createObjectURL(file));
+    setTimeout(() => {
+      // toDo: the type defined is wrong so we will update later -> use handleOnDurationChange
+      setVideoProps(
+        setRepetitionData(repetitionProps, {
+          duration: (videoElm.getState() as any).player.duration, // the type is wrong
+          value: 0,
+        })
+      );
+    }, 200);
+  };
+
   return (
     <div className="row">
       <div className="col-12 col-sm-12">
@@ -59,13 +72,13 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
           <Col sm={12} md={4}>
             <FilePond
               onupdatefiles={(files) => {
-                files.length > 0 && handleVideoPath(URL.createObjectURL(files[0].file));
+                files.length > 0 && handlePathChange(files[0].file);
               }}
               allowMultiple={false}
               maxFiles={1}
               name="files"
               labelIdle="Drag & Drop your video here or click "
-              acceptedFileTypes={['video/*']}
+              acceptedFileTypes={['video/*', '.mkv', 'audio/*']}
             />
           </Col>
           <Col sm={12} md={8}>
@@ -76,17 +89,18 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
                     const time = value as number;
                     const newRepetition = setRepetitionData(repetitionProps, {
                       value: time,
+                      currentLoop: numOfLoop,
                     });
                     setVideoProps(newRepetition);
                   }}
                   valueLabelDisplay="on"
                   value={value}
                   aria-labelledby="discrete-slider-always"
-                  min={min}
-                  max={max}
+                  min={0}
+                  max={duration}
                   defaultValue={0}
                   step={step}
-                  marks={getVideoLengthMark(step)}
+                  marks={getVideoLengthMark(step, duration)}
                   getAriaValueText={secondToMinute}
                   getAriaLabel={secondToMinute}
                 />
@@ -107,20 +121,38 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
           </Col>
           <Col sm={4} md={2}>
             <div className="form-group">
+              <div className="form-label">Auto</div>
+              <input
+                type="checkbox"
+                className="btn-check"
+                checked={autoNext}
+                onChange={() =>
+                  setVideoProps(
+                    setRepetitionData(repetitionProps, {
+                      autoNext: !autoNext,
+                    })
+                  )
+                }                
+              />
+              <label className="btn btn-outline-primary form-control" onClick={() =>
+                  setVideoProps(
+                    setRepetitionData(repetitionProps, {
+                      autoNext: !autoNext,
+                    })
+                  )
+                }>{autoNext ? 'On' : 'Off'}</label>
+            </div>
+          </Col>
+          <Col sm={4} md={2}>
+            <div className="form-group">
               <div className="form-label">Current loop</div>
-              {/* <input
-        type="number"
-        className="form-control"
-        value={currentLoop}
-        placeholder="Current step"
-        disabled
-      /> */}
-              <Form.Control
+              <input
                 type="text"
                 className="form-control"
                 id="inputName"
                 placeholder="Name"
                 value={currentLoop}
+                disabled
               />
             </div>
           </Col>
