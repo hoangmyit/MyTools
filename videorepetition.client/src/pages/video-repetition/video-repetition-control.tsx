@@ -7,6 +7,8 @@ import { Box, Slider } from '@mui/material';
 import { getVideoLengthMark } from './video-repetition-ult';
 import { secondToMinute } from '../../utility/time-utility';
 
+const localRepetitionKey = 'repetition-data';
+
 const setRepetitionData = (repetition: RepetitionVideoDef, updateData: any): RepetitionVideoDef => {
   return {
     ...repetition,
@@ -14,21 +16,34 @@ const setRepetitionData = (repetition: RepetitionVideoDef, updateData: any): Rep
   };
 };
 
+const getRepetitionDataOrDefault = (): RepetitionVideoDef => {
+  const saveData = localStorage.getItem(localRepetitionKey);
+  return saveData
+    ? JSON.parse(saveData)
+    : {
+        numOfLoop: 3,
+        step: 30,
+        value: 0,
+        waitingTime: 7,
+        currentLoop: 2,
+        autoNext: true,
+        duration: 0,
+      };
+};
+
+const setRepetitionDataInLocal = (data: RepetitionVideoDef) => {
+  data.currentLoop = data.numOfLoop;
+  localStorage.setItem(localRepetitionKey, JSON.stringify(data));
+};
+
 const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({ videoElm, handleVideoPath }) => {
-  const [repetitionProps, setVideoProps] = useState<RepetitionVideoDef>({
-    numOfLoop: 3,
-    step: 30,
-    value: 0,
-    waitingTime: 7,
-    currentLoop: 2,
-    autoNext: true,
-    duration: 0,
-  });
+  const [repetitionProps, setVideoProps] = useState<RepetitionVideoDef>(getRepetitionDataOrDefault());
+  const [isForceStope, setForceStop] = useState<boolean>(false);
 
   const { numOfLoop, step, value, waitingTime, currentLoop, duration, autoNext } = repetitionProps;
 
   const playVideo = (elm: PlayerReference, currentRepetition: RepetitionVideoDef) => {
-    if (currentRepetition.value > currentRepetition.duration) return;
+    if (currentRepetition.value > currentRepetition.duration || isForceStope) return;
     const newRepetition = setRepetitionData(currentRepetition, {
       currentLoop: currentRepetition.currentLoop - 1,
     });
@@ -119,7 +134,7 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
               </Button>
             </div>
           </Col>
-          <Col sm={4} md={2}>
+          <Col sm={2} md={1}>
             <div className="form-group">
               <div className="form-label">Auto</div>
               <input
@@ -132,15 +147,29 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
                       autoNext: !autoNext,
                     })
                   )
-                }                
+                }
               />
-              <label className="btn btn-outline-primary form-control" onClick={() =>
+              <label
+                className="btn btn-outline-primary form-control"
+                onClick={() =>
                   setVideoProps(
                     setRepetitionData(repetitionProps, {
                       autoNext: !autoNext,
                     })
                   )
-                }>{autoNext ? 'On' : 'Off'}</label>
+                }
+              >
+                {autoNext ? 'On' : 'Off'}
+              </label>
+            </div>
+          </Col>
+          <Col sm={2} md={1}>
+            <div className="form-group">
+              <div className="form-label">Force stop</div>
+              <input type="checkbox" className="btn-check" checked={isForceStope} />
+              <label className="btn btn-outline-primary form-control" onClick={() => setForceStop(!isForceStope)}>
+                {isForceStope ? 'On' : 'Off'}
+              </label>
             </div>
           </Col>
           <Col sm={4} md={2}>
@@ -165,7 +194,9 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
                 value={numOfLoop}
                 placeholder="Num of loops"
                 onChange={(e) => {
-                  setVideoProps(setRepetitionData(repetitionProps, { numOfLoop: e.target.valueAsNumber }));
+                  const newData = setRepetitionData(repetitionProps, { numOfLoop: e.target.valueAsNumber });
+                  setVideoProps(newData);
+                  setRepetitionDataInLocal(newData);
                 }}
               />
             </div>
@@ -179,7 +210,9 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
                 value={step}
                 placeholder="Step"
                 onChange={(e) => {
-                  setVideoProps(setRepetitionData(repetitionProps, { step: e.target.valueAsNumber }));
+                  const newData = setRepetitionData(repetitionProps, { step: e.target.valueAsNumber });
+                  setVideoProps(newData);
+                  setRepetitionDataInLocal(newData);
                 }}
               />
             </div>
@@ -193,7 +226,9 @@ const VideoRepetitionControl: FunctionComponent<RepetitionVideoControlProp> = ({
                 value={waitingTime}
                 placeholder="Waiting time"
                 onChange={(e) => {
-                  setVideoProps(setRepetitionData(repetitionProps, { waitingTime: e.target.valueAsNumber }));
+                  const newData = setRepetitionData(repetitionProps, { waitingTime: e.target.valueAsNumber });
+                  setVideoProps(newData);
+                  setRepetitionDataInLocal(newData);
                 }}
               />
             </div>
